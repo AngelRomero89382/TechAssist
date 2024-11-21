@@ -1,31 +1,24 @@
-# Declaración de Derechos de Autor y Propiedad Intelectual
+Licencia Propietaria TechAssist
+Copyright (c) 2024 TechAssist
+Autor Original y Líder del Proyecto: Angel Jesús Romero Pérez
 
-**TechAssist: Sistema de Aprendizaje Interactivo**
+AVISO: Este software y su código fuente están protegidos por leyes de derechos de autor.
+Ninguna parte de este software puede ser copiada, modificada, fusionada, publicada, 
+distribuida, sublicenciada y/o vendida sin el permiso expreso por escrito del titular 
+de los derechos de autor.
 
-Copyright © 2024 TechAssist
-Todos los derechos reservados.
+Todo el contenido, incluyendo pero no limitado a código fuente, documentación, diseños,
+logos y recursos multimedia son propiedad exclusiva de TechAssist.
 
-## Propiedad Intelectual
+USO PERMITIDO:
+- Ver el código fuente con fines educativos
+- Clonar el repositorio para estudio personal
+- Referenciar el proyecto con atribución apropiada
 
-Este proyecto, incluyendo pero no limitado a: código fuente, diseños, interfaces, imágenes, documentación, estructura de bases de datos, lógica de negocio, y cualquier otro material relacionado, es propiedad intelectual exclusiva de TechAssist.
+EXPLÍCITAMENTE PROHIBIDO:
+- Uso comercial de cualquier tipo
+- Modificación o creación de trabajos derivados
+- Redistribución del código o recursos
+- Uso de cualquier elemento del proyecto en otros trabajos
 
-## Declaración de Autoría
-
-TechAssist fue conceptualizado, diseñado y desarrollado originalmente por Angel Jesús Romero Pérez como autor original y líder del proyecto, en colaboración con el equipo de desarrollo de TechAssist. Toda la propiedad intelectual, derechos de autor y patentes relacionadas con este proyecto pertenecen exclusivamente a TechAssist.
-
-## Información de Contacto
-
-Para cualquier consulta relacionada con los derechos de autor o uso del proyecto:
-
-- **Proyecto:** TechAssist
-- **Email:** support@techassistpro.pro
-- **Año de Creación:** 2024
-- **Autor Original & Líder del Proyecto:** Angel Jesús Romero Pérez
-
-## Aviso Legal
-
-Cualquier uso, reproducción, modificación o distribución no autorizada de este material está estrictamente prohibida y puede resultar en acciones legales. Este documento sirve como evidencia oficial de la propiedad intelectual y autoría del proyecto TechAssist.
-
----
-Firmado y fechado: 21 de Noviembre, 2024
-TechAssist
+Para permisos adicionales, contactar: support@techassistpro.pro
