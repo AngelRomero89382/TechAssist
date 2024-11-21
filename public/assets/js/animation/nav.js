@@ -1,4 +1,11 @@
-
+/*
+ * TechAssist - Sistema de Aprendizaje Interactivo
+ * Copyright (c) 2024 TechAssist
+ * Autor: Angel Jesús Romero Pérez
+ * 
+ * Este archivo es parte de TechAssist y está protegido por derechos de autor.
+ * Uso no autorizado de este código está prohibido.
+ */
   window.addEventListener('DOMContentLoaded', function() {
     var navbar = document.getElementById('navbar');
     var prevScrollpos = window.pageYOffset;

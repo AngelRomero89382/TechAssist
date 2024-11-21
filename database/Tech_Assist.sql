@@ -1,3 +1,9 @@
+-- TechAssist - Sistema de Aprendizaje Interactivo
+-- Copyright (c) 2024 TechAssist
+-- Autor: Angel Jesús Romero Pérez
+-- 
+-- Este archivo es parte de TechAssist y está protegido por derechos de autor.
+-- Uso no autorizado de este código está prohibido.
 CREATE DATABASE IF NOT EXISTS u409226135_tech_assist;
 USE u409226135_tech_assist;
 

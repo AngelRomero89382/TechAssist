@@ -1,3 +1,11 @@
+<!--
+ * TechAssist - Sistema de Aprendizaje Interactivo
+ * Copyright (c) 2024 TechAssist
+ * Autor: Angel Jesús Romero Pérez
+ * 
+ * Este archivo es parte de TechAssist y está protegido por derechos de autor.
+ * Uso no autorizado de este código está prohibido.
+-->
 <?php
 require_once 'app/config/conn.php';
 require_once 'app/models/AuthModel.php';
