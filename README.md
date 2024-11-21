@@ -3,7 +3,7 @@
 
 ## ⚠️ Aviso de Derechos de Autor
 Este proyecto está protegido por derechos de autor y tiene una licencia restrictiva.
-Por favor, lee [LICENSE](LICENSE) antes de usar este repositorio.
+Por favor, lee [LICENSE](LICENSE.md) antes de usar este repositorio.
 
 ## 🔒 Uso Permitido
 - ✅ Ver el código fuente
