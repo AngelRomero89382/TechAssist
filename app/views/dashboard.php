@@ -66,11 +66,6 @@ require_once __DIR__ . '/../config/conn.php';
                                 </a>
                             </li>
                             <li>
-                                <a class="nav-link" href="#">
-                                    <i class="bi bi-pencil-square"></i> Modificar Cuenta
-                                </a>
-                            </li>
-                            <li>
                                 <a class="nav-link" id="showHistory" href="#">
                                     <i class="bi bi-clock-history"></i> Historial
                                 </a>
@@ -84,15 +79,6 @@ require_once __DIR__ . '/../config/conn.php';
                                 </a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-motherboard-fill"></i> Hardware</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-code-square"></i> Software</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-phone-fill"></i> Teléfonos</a>
                     </li>
                     <li class="nav-item">
                         <a onclick="PcMenu()" class="nav-link" href="#"><i class="bi bi-pc-display"></i> PCs-Escritorio</a>
@@ -600,13 +586,210 @@ require_once __DIR__ . '/../config/conn.php';
                 </div>
 
 
-                
+                <div class="content-container contenedor_base" id="principiante">
+    <div class="inner-container">
+        <!-- Contenido específico de Procesadores para Nivel Principiante -->
+        <h2 class="subtitle">Procesador - Nivel Principiante</h2>
+        <p>
+            El procesador es el "cerebro" de la computadora. Es el componente encargado de realizar todas las tareas y cálculos necesarios para que tu PC funcione correctamente.
+        </p>
+
+        <h3 class="section-title">¿Qué hace el procesador?</h3>
+        <ul>
+            <li>
+                Ejecuta programas: Desde juegos hasta aplicaciones como Word o Google Chrome.
+            </li>
+            <li>
+                Coordina las tareas de la computadora: Asegura que todo funcione de manera eficiente.
+            </li>
+            <li>
+                Trabaja con otros componentes: Como la tarjeta gráfica, la memoria RAM y el disco duro, para que puedas disfrutar de una experiencia fluida.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Cuidados Básicos</h3>
+        <ul>
+            <li>
+                Coloca la computadora en un lugar fresco y bien ventilado.
+            </li>
+            <li>
+                Evita golpes o movimientos bruscos que puedan dañar los componentes internos.
+            </li>
+            <li>
+                Apaga la computadora correctamente desde el sistema operativo, no solo desde el botón.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Recomendaciones</h3>
+        <ul>
+            <li>
+                Si necesitas comprar una computadora, elige una que tenga un procesador de al menos 4 núcleos para garantizar un buen rendimiento.
+            </li>
+            <li>
+                No es necesario aprender términos técnicos complejos de inmediato, pero entender lo básico te ayudará a tomar decisiones más informadas.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Datos Curiosos</h3>
+        <p>
+            Los procesadores modernos pueden realizar miles de millones de cálculos por segundo, lo que hace posible todo lo que ves en la pantalla.
+        </p>
+
+        <p class="conclusion">
+            Recuerda, el procesador es esencial para tu computadora. Cuídalo bien y funcionará sin problemas por muchos años.
+        </p>
+    </div>
+</div>
+
+
+
+
+                <div class="content-container contenedor_base" id="promedio">
+    <div class="inner-container">
+        <!-- Contenido específico de Procesadores para Nivel Intermedio -->
+        <h2 class="subtitle">Procesador - Nivel Intermedio</h2>
+        <p>
+            El procesador es uno de los componentes más importantes de tu PC, ya que ejecuta las instrucciones necesarias para que todos los programas y tareas funcionen correctamente. Como usuario intermedio, es esencial entender cómo mantener el rendimiento de tu procesador y evitar problemas comunes.
+        </p>
+
+        <h3 class="section-title">Cuidado del Procesador</h3>
+        <ul>
+            <li>
+                <strong>Monitoreo de Temperaturas:</strong>
+                <ul>
+                    <li>Utiliza software como HWMonitor, CoreTemp o Ryzen Master para monitorear la temperatura de tu CPU.</li>
+                    <li>Evita que las temperaturas superen los 85°C en cargas intensivas.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Limpieza y Pasta Térmica:</strong>
+                <ul>
+                    <li>Revisa regularmente el estado del disipador de calor y los ventiladores para eliminar polvo acumulado.</li>
+                    <li>Cambia la pasta térmica cada 1-2 años para garantizar una transferencia eficiente de calor.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3 class="section-title">Tecnologías Clave</h3>
+        <ul>
+            <li>
+                <strong>Turbo Boost/Precision Boost:</strong> Estas tecnologías permiten que tu procesador aumente su velocidad automáticamente cuando es necesario, optimizando el rendimiento.
+            </li>
+            <li>
+                <strong>Compatibilidad:</strong> Antes de actualizar o comprar, verifica que el procesador sea compatible con la placa base y la RAM. Los sockets como AM4 para AMD y LGA1200/LGA1700 para Intel son puntos clave a considerar.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Recomendaciones</h3>
+        <ul>
+            <li>
+                Si usas tu computadora para juegos o trabajo, prioriza procesadores con al menos 6 núcleos y 12 hilos para un equilibrio adecuado entre rendimiento y multitarea.
+            </li>
+            <li>
+                Considera habilitar o deshabilitar el "Hyper-Threading" o "Simultaneous Multithreading" según el tipo de carga que utilices (puedes hacerlo desde el BIOS).
+            </li>
+        </ul>
+
+        <h3 class="section-title">Nomenclatura de Procesadores</h3>
+        <ul>
+            <li>
+                **Intel Core i5/i7:** Los procesadores con el sufijo "K" son desbloqueados para overclocking. Ejemplo: Intel Core i7-12700K.
+            </li>
+            <li>
+                **AMD Ryzen:** Los modelos con "X" indican versiones de alto rendimiento. Ejemplo: Ryzen 7 5700X. Las versiones con "G" tienen gráficos integrados.
+            </li>
+        </ul>
+
+        <p class="conclusion">
+            Como usuario intermedio, puedes maximizar el rendimiento de tu CPU con un buen mantenimiento, eligiendo componentes compatibles y aprovechando las tecnologías disponibles.
+        </p>
+    </div>
+</div>
+
+
+                <div class="content-container contenedor_base" id="experto">
+    <div class="inner-container">
+        <!-- Contenido específico de Procesadores para Nivel Experto -->
+        <h2 class="subtitle">Procesador - Nivel Experto</h2>
+        <p>
+            Los procesadores son componentes críticos para maximizar el rendimiento de cualquier sistema avanzado. Aquí se profundiza en temas relevantes para usuarios experimentados que buscan optimizar su hardware.
+        </p>
+
+        <h3 class="section-title">Overclocking Seguro</h3>
+        <ul>
+            <li>
+                Realizar overclocking puede incrementar el rendimiento, pero debe hacerse con precaución:
+                <ul>
+                    <li>Monitorear frecuencias, temperaturas y voltajes en tiempo real.</li>
+                    <li>Evitar configuraciones extremas que puedan reducir la vida útil del procesador.</li>
+                    <li>Invertir en sistemas de refrigeración líquida o disipadores de alta gama.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3 class="section-title">Problemas Conocidos</h3>
+        <ul>
+            <li>
+                <strong>Intel 13th Gen:</strong>
+                <ul>
+                    <li>Problemas de oxidación en los contactos debido a materiales sensibles al ambiente.</li>
+                    <li>Altas temperaturas bajo carga, lo que requiere soluciones avanzadas de enfriamiento.</li>
+                    <li>Algunos lotes con defectos de fabricación, distribuidos a pesar de las quejas iniciales.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>AMD Ryzen 7000 y 9000 Series:</strong>
+                <ul>
+                    <li>Picos de voltaje en algunos modelos iniciales que dañaban placas base.</li>
+                    <li>BIOS tempranos con inestabilidad que afectaba rendimiento en ciertas aplicaciones.</li>
+                    <li>Estos problemas han sido mitigados con actualizaciones de firmware.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3 class="section-title">Nuevas Tecnologías</h3>
+        <ul>
+            <li>
+                <strong>Intel Core Ultra:</strong> Presentan núcleos híbridos con énfasis en rendimiento multitarea y eficiencia energética. 
+                Estos procesadores destacan en tareas que requieren un equilibrio entre rendimiento y consumo.
+            </li>
+            <li>
+                <strong>AMD Ryzen 9850X3D:</strong>
+                <ul>
+                    <li>La incorporación de 3D V-Cache aumenta significativamente el rendimiento en juegos.</li>
+                    <li>Diseñado para cargas de trabajo intensivas como renderizado y simulaciones.</li>
+                    <li>Alto enfoque en la optimización térmica para cargas prolongadas.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3 class="section-title">Recomendaciones Avanzadas</h3>
+        <ul>
+            <li>
+                <strong>Actualización del BIOS:</strong> Mantén tu sistema al día con las últimas versiones para evitar problemas de compatibilidad y mejorar la estabilidad.
+            </li>
+            <li>
+                <strong>Gestión térmica:</strong> Utiliza pastas térmicas de alta calidad, verifica el flujo de aire en tu gabinete y considera radiadores de 240mm o más.
+            </li>
+            <li>
+                <strong>Análisis del rendimiento:</strong> Usa software como Cinebench, Prime95 o HWMonitor para validar las ganancias de overclock o undervolting.
+            </li>
+            <li>
+                <strong>Preparación para nuevas arquitecturas:</strong> Evalúa las ventajas de tecnologías emergentes, como DDR5, PCIe 5.0 y compatibilidad con nuevas placas base.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Conclusión</h3>
+        <p>
+            Los procesadores modernos ofrecen un potencial inmenso, pero es fundamental entender sus limitaciones y posibles riesgos para sacar el máximo provecho. Con un enfoque meticuloso y herramientas adecuadas, los usuarios expertos pueden llevar su hardware al siguiente nivel.
+        </p>
+    </div>
+</div>
+
+
                 </div>
-                <div class="content-container">
-                    <div class="inner-container">
-                        <!-- Contenido específico de CPU -->
-                    </div>
-                </div>
+
+
             </div>
 
         </div>
@@ -638,11 +821,162 @@ require_once __DIR__ . '/../config/conn.php';
                 </div>
                 
                 </div>
-                <div class="content-container">
-                    <div class="inner-container">
-                        <!-- Contenido específico de CPU -->
-                    </div>
-                </div>
+ 
+
+                <div class="content-container contenedor_base" id="principiante">
+    <div class="inner-container">
+        <!-- Contenido específico de Memoria RAM para Principiantes -->
+        <h2 class="subtitle">Memoria RAM - Nivel Principiante</h2>
+        <p>
+            La memoria RAM (Memoria de Acceso Aleatorio) es un componente importante que ayuda a tu computadora a trabajar rápido y sin interrupciones.
+        </p>
+
+        <h3 class="section-title">¿Qué es la memoria RAM?</h3>
+        <ul>
+            <li>
+                Es un lugar temporal donde la computadora guarda datos que necesita usar rápidamente.
+            </li>
+            <li>
+                Por ejemplo, cuando abres un programa o navegas por internet, la RAM guarda esos datos para que todo funcione sin demora.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Beneficios de una buena RAM</h3>
+        <ul>
+            <li>
+                Ayuda a que las aplicaciones se abran más rápido.
+            </li>
+            <li>
+                Permite que varias tareas se ejecuten al mismo tiempo sin que la computadora se vuelva lenta.
+            </li>
+            <li>
+                Es esencial para juegos, programas de diseño y navegación fluida.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Cuidados básicos</h3>
+        <ul>
+            <li>
+                Mantén limpia la computadora para evitar que el polvo afecte el rendimiento de la RAM.
+            </li>
+            <li>
+                Si sientes que tu computadora es lenta, tal vez necesite más memoria RAM.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Recomendación</h3>
+        <ul>
+            <li>
+                Para tareas básicas como navegar por internet o usar Word, 4GB o 8GB de RAM suelen ser suficientes.
+            </li>
+            <li>
+                Consulta con un experto si necesitas agregar más RAM para tareas más exigentes.
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+                <div class="content-container contenedor_base" id="promedio">
+    <div class="inner-container">
+        <!-- Contenido específico de Memoria RAM para Nivel Intermedio -->
+        <h2 class="subtitle">Memoria RAM - Nivel Intermedio</h2>
+        <p>
+            La memoria RAM es esencial para un rendimiento fluido en las tareas diarias y el uso de aplicaciones más demandantes.
+        </p>
+
+        <h3 class="section-title">Monitoreo del Uso</h3>
+        <ul>
+            <li>
+                Utiliza herramientas como el <strong>Administrador de Tareas</strong> en Windows o <strong>Monitor de Actividad</strong> en macOS para verificar cuánto de tu RAM se está utilizando.
+            </li>
+            <li>
+                Si notas que la memoria RAM está constantemente al límite, considera ampliar su capacidad.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Capacidad Adecuada</h3>
+        <ul>
+            <li>
+                Para tareas generales y multitarea moderada, 8GB de RAM suelen ser suficientes.
+            </li>
+            <li>
+                Para gaming, diseño gráfico o edición de video, opta por 16GB o más para garantizar un rendimiento estable.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Mantenimiento Básico</h3>
+        <ul>
+            <li>
+                Limpia físicamente los módulos de memoria periódicamente para evitar la acumulación de polvo.
+            </li>
+            <li>
+                Asegúrate de que los módulos estén instalados en las ranuras correctas (generalmente indicadas por colores en la placa base) para activar el <strong>dual channel</strong>.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Actualización de RAM</h3>
+        <ul>
+            <li>
+                Consulta las especificaciones de tu placa base para verificar la capacidad máxima de RAM soportada.
+            </li>
+            <li>
+                Instala módulos con frecuencias compatibles (por ejemplo, 2666 MHz o 3200 MHz) para evitar problemas de compatibilidad.
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+                <div class="content-container contenedor_base" id="experto">
+    <div class="inner-container">
+        <!-- Contenido específico de Memoria RAM para Expertos -->
+        <h2 class="subtitle">Memoria RAM - Nivel Experto</h2>
+        <p>
+            La memoria RAM juega un papel crucial en el rendimiento del sistema, y una configuración avanzada puede maximizar su potencial.
+        </p>
+
+        <h3 class="section-title">Optimización Avanzada</h3>
+        <ul>
+            <li>
+                Activa <strong>perfiles XMP/EXPO</strong> desde el BIOS para que la RAM funcione a su velocidad nominal de fábrica.
+            </li>
+            <li>
+                Ajusta manualmente los <strong>timings</strong> y voltajes para alcanzar configuraciones personalizadas que equilibren velocidad y estabilidad.
+            </li>
+            <li>
+                Realiza pruebas de estabilidad con herramientas como <em>MemTest86</em> o <em>AIDA64</em> tras realizar ajustes avanzados.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Cuidado y Gestión</h3>
+        <ul>
+            <li>
+                Asegúrate de que los módulos estén correctamente instalados en el modo <strong>dual channel</strong> o <strong>quad channel</strong> para maximizar el ancho de banda.
+            </li>
+            <li>
+                Mantén la memoria RAM limpia y libre de polvo para evitar problemas de contacto.
+            </li>
+        </ul>
+
+        <h3 class="section-title">Consideraciones Técnicas</h3>
+        <ul>
+            <li>
+                Investiga la compatibilidad de tu RAM con tu placa base para evitar problemas de estabilidad.
+            </li>
+            <li>
+                Si trabajas con aplicaciones de alto rendimiento (edición 3D, simulaciones, juegos), prioriza la capacidad (32GB o más) y alta frecuencia (3200 MHz+).
+            </li>
+            <li>
+                Configura el sistema de refrigeración si la RAM cuenta con disipadores de calor activos o RGB para evitar sobrecalentamientos.
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
             </div>
         </div>
 
@@ -674,11 +1008,109 @@ require_once __DIR__ . '/../config/conn.php';
                 </div>
                 
                 </div>
-                <div class="content-container">
-                    <div class="inner-container">
-                        <!-- Contenido específico de CPU -->
-                    </div>
-                </div>
+ 
+                <div class="content-container contenedor_base" id="principiante">
+    <div class="inner-container">
+        <!-- Contenido específico de Tarjeta Madre para Principiantes -->
+        <h2 class="subtitle">Tarjeta Madre - Nivel Principiante</h2>
+        <p>
+            La tarjeta madre es el componente central de la computadora que conecta y permite que los demás componentes trabajen juntos.
+        </p>
+
+        <h3 class="section-title">¿Qué hace la tarjeta madre?</h3>
+        <ul>
+            <li>Permite que el procesador, la memoria RAM, el almacenamiento y otros componentes interactúen entre sí.</li>
+            <li>Incluye puertos para conectar periféricos como el teclado, ratón y monitores.</li>
+        </ul>
+
+        <h3 class="section-title">Consejos básicos</h3>
+        <ul>
+            <li>Evita tocar directamente los circuitos de la tarjeta madre para no dañarlos.</li>
+            <li>Asegúrate de que todos los cables estén bien conectados antes de encender la computadora.</li>
+            <li>Coloca la computadora en un lugar seco y ventilado para evitar daños por humedad o calor.</li>
+        </ul>
+
+        <h3 class="section-title">Importancia</h3>
+        <ul>
+            <li>Sin una tarjeta madre, los componentes de tu PC no podrán funcionar.</li>
+            <li>Es importante elegir una tarjeta compatible con el procesador y otros componentes.</li>
+        </ul>
+    </div>
+</div>
+
+
+                <div class="content-container contenedor_base" id="promedio">
+    <div class="inner-container">
+        <!-- Contenido específico de Tarjeta Madre para Usuarios Intermedios -->
+        <h2 class="subtitle">Tarjeta Madre - Nivel Intermedio</h2>
+        <p>
+            La tarjeta madre conecta todos los componentes principales de tu PC. Mantenerla actualizada y bien configurada asegura compatibilidad y estabilidad en tu sistema.
+        </p>
+
+        <h3 class="section-title">Actualización del BIOS</h3>
+        <ul>
+            <li>Revisa regularmente en la página del fabricante si hay actualizaciones para tu modelo.</li>
+            <li>Usa herramientas integradas en la tarjeta madre como **EZ Flash** para facilitar el proceso.</li>
+            <li>Sigue siempre las instrucciones del fabricante para evitar errores durante la actualización.</li>
+        </ul>
+
+        <h3 class="section-title">Gestión de Conexiones</h3>
+        <ul>
+            <li>Asegúrate de conectar correctamente los cables de alimentación, SATA y ventiladores.</li>
+            <li>Utiliza los puertos PCIe y RAM según el manual para un mejor rendimiento.</li>
+            <li>Evita doblar los pines de conexión en el socket del procesador.</li>
+        </ul>
+
+        <h3 class="section-title">Recomendaciones</h3>
+        <ul>
+            <li>Actualiza los controladores (drivers) de los componentes desde la página del fabricante.</li>
+            <li>Monitorea las temperaturas de la tarjeta madre para evitar sobrecalentamientos.</li>
+            <li>Invierte en una tarjeta madre con características que permitan futuras actualizaciones, como soporte para procesadores más modernos.</li>
+        </ul>
+    </div>
+</div>
+
+
+                <div class="content-container contenedor_base" id="experto">
+    <div class="inner-container">
+        <!-- Contenido específico de Tarjeta Madre para Usuarios Expertos -->
+        <h2 class="subtitle">Tarjeta Madre - Nivel Experto</h2>
+        <p>
+            La tarjeta madre es el corazón del sistema, conectando y gestionando todos los componentes de tu PC. Para un usuario experto, optimizar el BIOS y ajustar configuraciones avanzadas es clave para maximizar el rendimiento.
+        </p>
+
+        <h3 class="section-title">Optimización del BIOS</h3>
+        <ul>
+            <li>Habilita el perfil **XMP/EXPO** para maximizar la velocidad de tu memoria RAM.</li>
+            <li>Ajusta manualmente los voltajes y frecuencias del procesador para un overclock estable.</li>
+            <li>Desactiva dispositivos integrados no utilizados (como puertos USB específicos) para liberar recursos.</li>
+        </ul>
+
+        <h3 class="section-title">Actualización del BIOS</h3>
+        <ul>
+            <li>Consulta el sitio oficial del fabricante de tu tarjeta madre para descargar la última versión del BIOS.</li>
+            <li>Usa herramientas integradas como **EZ Flash** o similares para aplicar la actualización de manera segura.</li>
+            <li>Realiza una copia de seguridad de la configuración actual del BIOS antes de actualizar.</li>
+        </ul>
+
+        <h3 class="section-title">Configuraciones Avanzadas</h3>
+        <ul>
+            <li>Configura la prioridad de arranque para optimizar el inicio del sistema.</li>
+            <li>Activa o desactiva funciones como **Virtualización** o **Resizable BAR** según tus necesidades.</li>
+            <li>Monitorea las temperaturas y velocidades del ventilador desde el BIOS para mantener un buen rendimiento térmico.</li>
+        </ul>
+
+        <h3 class="section-title">Recomendaciones</h3>
+        <ul>
+            <li>Utiliza herramientas de monitoreo como **HWInfo** o **CPU-Z** para verificar los cambios realizados en el BIOS.</li>
+            <li>Si experimentas inestabilidad, restablece los valores predeterminados del BIOS y ajusta de nuevo.</li>
+            <li>Invierte en una tarjeta madre de alta calidad con buenas fases de potencia y soporte para actualizaciones futuras.</li>
+        </ul>
+    </div>
+</div>
+
+
+
             </div>
         </div>
 
@@ -710,11 +1142,120 @@ require_once __DIR__ . '/../config/conn.php';
                     </div>
                 </div>                
                 </div>
-                <div class="content-container">
-                    <div class="inner-container">
-                        <!-- Contenido específico de CPU -->
-                    </div>
-                </div>
+  
+                <div class="content-container contenedor_base" id="principiante">
+    <div class="inner-container">
+        <!-- Contenido específico de Gabinete para Principiantes -->
+        <h2 class="subtitle">Gabinete - Nivel Principiante</h2>
+        <p>
+            El gabinete es la estructura que protege todas las partes internas de tu computadora, como el procesador, la tarjeta gráfica, y el disco duro. Además, ayuda a mantener todo en su lugar y organizado.
+        </p>
+
+        <h3 class="section-title">¿Por qué es importante?</h3>
+        <ul>
+            <li>Protege los componentes contra el polvo, la suciedad y posibles golpes.</li>
+            <li>Ayuda a mantener los cables organizados, evitando que se enreden o se dañen.</li>
+            <li>Permite que el aire circule, lo que ayuda a evitar que los componentes se calienten demasiado.</li>
+        </ul>
+
+        <h3 class="section-title">Cuidados Básicos</h3>
+        <ul>
+            <li>Coloca la computadora en un lugar estable, lejos de la humedad y el polvo.</li>
+            <li>No obstruyas las rejillas de ventilación para que el aire pueda entrar y salir fácilmente.</li>
+            <li>Usa un paño suave para limpiar el gabinete por fuera y mantén el área alrededor limpia.</li>
+        </ul>
+
+        <h3 class="section-title">Recomendaciones</h3>
+        <ul>
+            <li>Si planeas mover tu computadora, hazlo con cuidado para evitar daños internos.</li>
+            <li>No coloques objetos encima del gabinete, ya que podrían bloquear las salidas de aire o causar daños.</li>
+            <li>Revisa periódicamente las rejillas de ventilación para asegurarte de que no estén llenas de polvo.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+                <div class="content-container contenedor_base" id="promedio">
+    <div class="inner-container">
+        <!-- Contenido específico de Gabinete para Usuarios Promedio -->
+        <h2 class="subtitle">Gabinete - Nivel Intermedio</h2>
+        <p>
+            El gabinete no solo protege los componentes de tu PC, sino que también es esencial para un buen flujo de aire y una apariencia organizada. Como usuario promedio, mantener una gestión de cables adecuada puede mejorar significativamente el rendimiento térmico y la estética de tu sistema.
+        </p>
+
+        <h3 class="section-title">Gestión de Cables</h3>
+        <ul>
+            <li>Usa las ranuras de gestión de cables y los puntos de anclaje dentro del gabinete.</li>
+            <li>Organiza los cables detrás de la bandeja de la placa base para mantener el espacio interior despejado.</li>
+            <li>Utiliza bridas o velcro para asegurar los cables en su lugar y evitar que interfieran con el flujo de aire.</li>
+        </ul>
+
+        <h3 class="section-title">Mejorar el Flujo de Aire</h3>
+        <ul>
+            <li>Asegúrate de que las rejillas de entrada y salida no estén bloqueadas.</li>
+            <li>Coloca ventiladores adicionales en las áreas compatibles del gabinete para mejorar la ventilación, como la parte frontal (entrada) y trasera (salida).</li>
+            <li>Limpia regularmente los filtros antipolvo para evitar la acumulación que puede afectar el flujo de aire.</li>
+        </ul>
+
+        <h3 class="section-title">Elección del Gabinete</h3>
+        <p>
+            Elige un gabinete con suficiente espacio para tus componentes actuales y posibles actualizaciones. Un ejemplo como el NZXT H9 Elite ofrece espacio para tarjetas gráficas grandes y sistemas de refrigeración adecuados.
+        </p>
+
+        <h3 class="section-title">Recomendaciones</h3>
+        <ul>
+            <li>Considera un gabinete con paneles de vidrio templado si deseas mostrar tu hardware RGB.</li>
+            <li>Asegúrate de que el gabinete incluya filtros antipolvo para facilitar el mantenimiento.</li>
+            <li>Consulta el manual del gabinete para seguir las mejores prácticas de instalación y cableado.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+                <div class="content-container contenedor_base" id="experto">
+    <div class="inner-container">
+        <!-- Contenido específico de Gabinete para Expertos -->
+        <h2 class="subtitle">Gabinete - Nivel Experto</h2>
+        <p>
+            El gabinete no es solo una caja para almacenar componentes; es clave para un rendimiento óptimo de tu PC. Como usuario avanzado, la gestión del flujo de aire, el espacio para los componentes y la estética personalizada son aspectos cruciales.
+        </p>
+
+        <h3 class="section-title">Optimización del Flujo de Aire</h3>
+        <ul>
+            <li>Configura un flujo de aire positivo o negativo según tus necesidades. El flujo positivo minimiza la entrada de polvo.</li>
+            <li>Coloca ventiladores de entrada en la parte frontal y/o inferior y ventiladores de salida en la parte trasera y superior.</li>
+            <li>Utiliza filtros antipolvo en entradas clave para proteger los componentes internos.</li>
+        </ul>
+
+        <h3 class="section-title">Refrigeración Avanzada</h3>
+        <ul>
+            <li>Considera sistemas de refrigeración líquida personalizada si usas hardware de alto rendimiento o realizas overclocking.</li>
+            <li>Verifica el soporte para radiadores y bombas al seleccionar un gabinete. Por ejemplo, el NZXT H9 Elite es compatible con radiadores de hasta 360 mm.</li>
+        </ul>
+
+        <h3 class="section-title">Gestión de Cables</h3>
+        <ul>
+            <li>Organiza los cables detrás de la bandeja de la placa base para un flujo de aire limpio y una estética profesional.</li>
+            <li>Utiliza bridas, canales y clips de gestión de cables para evitar obstrucciones.</li>
+        </ul>
+
+        <h3 class="section-title">Factores Adicionales</h3>
+        <ul>
+            <li>Considera un gabinete con vidrio templado para lucir componentes RGB.</li>
+            <li>Asegúrate de que el gabinete tenga espacio suficiente para GPUs de gran tamaño y sistemas de refrigeración.</li>
+            <li>Selecciona un diseño que permita futuras actualizaciones, como más discos o componentes de enfriamiento adicionales.</li>
+        </ul>
+
+        <h3 class="section-title">Ejemplo de Configuración</h3>
+        <p>
+            En el NZXT H9 Elite, instala un radiador de 360 mm en la parte superior con ventiladores RGB de entrada en el frontal y salida trasera. Usa un sistema de gestión de cables para mantener una apariencia limpia.
+        </p>
+    </div>
+</div>
+
+
             </div>
         </div>
 
@@ -746,6 +1287,128 @@ require_once __DIR__ . '/../config/conn.php';
                     </div>
                 </div>
             </div>
+
+            <div class="content-container contenedor_base" id="principiante">
+    <div class="inner-container">
+        <!-- Contenido específico de Fuente de Poder para Principiantes -->
+        <h2 class="subtitle">Fuente de Poder - Nivel Principiante</h2>
+        <p>
+            La fuente de poder, o PSU (Power Supply Unit), es un componente fundamental de tu computadora. Su principal función es transformar la energía eléctrica que llega desde el enchufe y distribuirla a las diferentes partes de la computadora, como el procesador, la tarjeta gráfica y el disco duro.
+        </p>
+
+        <h3 class="section-title">¿Por qué es importante?</h3>
+        <ul>
+            <li>Sin la fuente de poder, la computadora no puede encender ni funcionar.</li>
+            <li>Proporciona la cantidad adecuada de energía a cada componente, evitando daños.</li>
+        </ul>
+
+        <h3 class="section-title">Cosas Básicas a Considerar</h3>
+        <ul>
+            <li><strong>Capacidad:</strong> Asegúrate de que la fuente sea lo suficientemente potente para todos los componentes de tu computadora. Por ejemplo, una PC básica necesita menos potencia que una diseñada para juegos.</li>
+            <li><strong>Conectores:</strong> La fuente tiene cables que van a cada componente. Es importante conectarlos correctamente para que todo funcione.</li>
+        </ul>
+
+        <h3 class="section-title">Buenas Prácticas</h3>
+        <ul>
+            <li>Coloca tu computadora en un lugar seco y ventilado para evitar sobrecalentamientos.</li>
+            <li>Apaga siempre la computadora de manera segura antes de desconectar la fuente de poder.</li>
+            <li>Si notas ruidos extraños o la PC se apaga de repente, podría ser un problema de la fuente de poder. Consulta a un técnico.</li>
+        </ul>
+
+        <h3 class="section-title">Ejemplo de Uso</h3>
+        <p>
+            Conecta la fuente a un enchufe confiable y verifica que el interruptor esté en la posición de encendido. Luego, conecta los cables principales a la placa base, disco duro y otros componentes.
+        </p>
+    </div>
+</div>
+
+
+
+
+            <div class="content-container contenedor_base" id="promedio">
+    <div class="inner-container">
+        <!-- Contenido específico de Fuente de Poder para Intermedios -->
+        <h2 class="subtitle">Fuente de Poder - Nivel Intermedio</h2>
+        <p>
+            La fuente de poder (PSU) es esencial para garantizar que tu computadora reciba energía de manera segura y eficiente. Elegir una fuente adecuada puede evitar problemas como apagados inesperados o daños a los componentes.
+        </p>
+
+        <h3 class="section-title">Aspectos Clave para Usuarios Intermedios</h3>
+        <ul>
+            <li><strong>Capacidad:</strong> Asegúrate de que la PSU tenga la potencia suficiente para soportar todos los componentes de tu sistema, incluyendo CPU, GPU y periféricos adicionales. Usa herramientas como <a href="https://outervision.com/power-supply-calculator" target="_blank">calculadoras de potencia</a> para estimar tus necesidades.</li>
+            <li><strong>Certificación:</strong> Opta por fuentes con certificación <em>80 Plus Bronze</em> o superior para una mayor eficiencia energética y menor desperdicio de energía.</li>
+            <li><strong>Gestión de Cables:</strong> Mantén los cables organizados dentro del gabinete para mejorar el flujo de aire y facilitar futuras actualizaciones o mantenimiento.</li>
+        </ul>
+
+        <h3 class="section-title">Buenas Prácticas</h3>
+        <ul>
+            <li><strong>Evita Sobrecargar la PSU:</strong> Siempre deja un margen del 20-30% por encima de tus necesidades de potencia para garantizar estabilidad y futuras expansiones.</li>
+            <li><strong>Distribución de Conectores:</strong> Usa los conectores dedicados en lugar de adaptadores para componentes como tarjetas gráficas y discos duros.</li>
+        </ul>
+
+        <h3 class="section-title">Mantenimiento Básico</h3>
+        <ul>
+            <li>Limpia los ventiladores de la PSU al menos cada seis meses para evitar la acumulación de polvo.</li>
+            <li>Revisa regularmente los cables para asegurarte de que no estén dañados o desgastados.</li>
+        </ul>
+
+        <h3 class="section-title">Recomendaciones</h3>
+        <p>
+            Si planeas realizar actualizaciones en tu sistema, considera una fuente modular o semi-modular para una mayor flexibilidad. Marcas como <strong>Corsair, EVGA</strong> y <strong>Thermaltake</strong> ofrecen opciones confiables para usuarios intermedios.
+        </p>
+    </div>
+</div>
+
+
+
+            <div class="content-container contenedor_base" id="experto">
+    <div class="inner-container">
+        <!-- Contenido específico de Fuente de Poder para Expertos -->
+        <h2 class="subtitle">Fuente de Poder - Nivel Experto</h2>
+        <p>
+            La fuente de poder (PSU) es un componente crítico que asegura el suministro de energía estable y eficiente a todos los componentes de tu computadora.
+        </p>
+
+        <h3 class="section-title">Consideraciones Avanzadas al Elegir una PSU</h3>
+        <ul>
+            <li><strong>Certificación 80 Plus:</strong> Opta por fuentes con certificación <em>Gold</em>, <em>Platinum</em> o <em>Titanium</em> para garantizar eficiencia energética y menor generación de calor.</li>
+            <li><strong>Modularidad:</strong> Prefiere fuentes <em>modulares</em> o <em>semi-modulares</em> para mejorar la gestión de cables y el flujo de aire en el gabinete.</li>
+            <li><strong>Capacidad:</strong> Asegúrate de que la PSU tenga suficiente potencia para soportar tu configuración, incluyendo márgenes para overclocking o futuros componentes adicionales.</li>
+        </ul>
+
+        <h3 class="section-title">Conectores PCIe de Calidad</h3>
+        <p>
+            Verifica que los conectores PCIe sean robustos y de alta calidad, especialmente si usas tarjetas gráficas avanzadas. 
+            Componentes como la <strong>NVIDIA RTX 4090</strong> requieren cables específicos (12VHPWR) con capacidad para manejar cargas elevadas.
+        </p>
+
+        <h3 class="section-title">Factores Clave de Compatibilidad</h3>
+        <ul>
+            <li><strong>Compatibilidad con UPS:</strong> Asegúrate de que tu PSU sea compatible con sistemas de alimentación ininterrumpida (UPS) para evitar problemas durante apagones.</li>
+            <li><strong>Dimensiones:</strong> Verifica que el tamaño de la PSU (ATX, SFX) sea adecuado para tu gabinete.</li>
+        </ul>
+
+        <h3 class="section-title">Mantenimiento y Buenas Prácticas</h3>
+        <ul>
+            <li>Limpia regularmente los ventiladores de la PSU para evitar acumulación de polvo que afecte la refrigeración.</li>
+            <li>Evita conectar demasiados adaptadores en serie, ya que pueden generar resistencia adicional y pérdida de eficiencia.</li>
+            <li>Monitorea el consumo energético de tu sistema para asegurarte de que no excedes la capacidad nominal de la fuente.</li>
+        </ul>
+
+        <h3 class="section-title">Optimización Avanzada</h3>
+        <p>
+            Si buscas maximizar la eficiencia energética, considera usar fuentes con modos híbridos que ajusten el uso de ventiladores según la carga. Esto reduce el ruido y prolonga la vida útil del componente.
+        </p>
+
+        <h3 class="section-title">Recomendaciones Técnicas</h3>
+        <p>
+            Una buena fuente de poder no solo proporciona estabilidad, sino que también protege los componentes frente a fluctuaciones de energía y cortocircuitos. Asegúrate de elegir marcas confiables como <strong>Corsair, EVGA, Seasonic</strong> o <strong>Cooler Master</strong>.
+        </p>
+    </div>
+</div>
+
+
+
             <div class="content-container">
                 <div class="inner-container">
                     <!-- Questions Section -->
@@ -838,6 +1501,88 @@ require_once __DIR__ . '/../config/conn.php';
                 </div>                
                 </div>
    
+
+                <div class="content-container contenedor_base" id="principiante">
+    <div class="inner-container">
+        <!-- Contenido específico de Enfriamiento de la CPU para Principiantes -->
+        <h2 class="subtitle">¿Qué es el Enfriamiento de la CPU?</h2>
+        <p>
+            El enfriamiento de la CPU es un sistema que se encarga de evitar que el procesador se caliente demasiado. Esto es esencial para que tu computadora funcione correctamente y no se dañe con el tiempo.
+        </p>
+
+        <h3 class="section-title">¿Cómo Funciona?</h3>
+        <p>
+            Los procesadores generan calor mientras trabajan, y el enfriamiento de la CPU utiliza ventiladores o sistemas especiales para disipar ese calor. 
+            Es como un ventilador para tu computadora.
+        </p>
+
+        <h3 class="section-title">Tipos de Enfriamiento</h3>
+        <ul>
+            <li><strong>Enfriamiento por Aire:</strong> Usa un ventilador y un disipador metálico para alejar el calor del procesador.</li>
+            <li><strong>Enfriamiento Líquido:</strong> Usa tubos con líquido que absorben y disipan el calor, siendo más eficiente pero también más complejo.</li>
+        </ul>
+
+        <h3 class="section-title">Consejos Básicos</h3>
+        <ul>
+            <li>Coloca tu computadora en un lugar donde circule bien el aire, como en un escritorio y no en el suelo.</li>
+            <li>Evita que las rejillas de ventilación estén bloqueadas o llenas de polvo.</li>
+            <li>No expongas la computadora directamente al sol o cerca de fuentes de calor como estufas.</li>
+        </ul>
+
+        <h3 class="section-title">¿Qué Hacer si la Computadora Calienta?</h3>
+        <p>
+            Si sientes que tu computadora está muy caliente:
+            <ul>
+                <li>Apágala y deja que se enfríe.</li>
+                <li>Revisa que los ventiladores estén funcionando correctamente.</li>
+                <li>Si continúa el problema, busca ayuda de un técnico para revisar el sistema de enfriamiento.</li>
+            </ul>
+        </p>
+
+        <h3 class="section-title">Importancia del Enfriamiento</h3>
+        <p>
+            Mantener la CPU a una temperatura adecuada ayuda a que la computadora dure más tiempo y funcione de manera más eficiente.
+        </p>
+    </div>
+</div>
+
+
+
+                <div class="content-container contenedor_base" id="promedio">
+    <div class="inner-container">
+        <!-- Contenido específico de Enfriamiento de la CPU para Nivel Promedio -->
+        <h2 class="subtitle">Mantenimiento Básico del Enfriamiento de la CPU</h2>
+        <p>
+            Mantener tu sistema de enfriamiento en condiciones óptimas es esencial para garantizar el rendimiento y evitar sobrecalentamientos. Aquí te mostramos las prácticas recomendadas para usuarios intermedios.
+        </p>
+
+        <h3 class="section-title">Limpieza Regular</h3>
+        <p>
+            - **Ventiladores:** Limpia los ventiladores utilizando una brocha suave o aire comprimido para eliminar el polvo acumulado.<br>
+            - **Radiador:** Verifica que no haya obstrucciones entre las aletas del radiador. Usa aire comprimido para limpiarlo de manera segura.<br>
+            - **Gabinete:** Mantén un flujo de aire adecuado limpiando las rejillas y filtros del gabinete regularmente.
+        </p>
+
+        <h3 class="section-title">Monitoreo de Temperaturas</h3>
+        <p>
+            - Utiliza software como **HWMonitor** o **NZXT CAM** para revisar las temperaturas de la CPU durante el uso.<br>
+            - Una CPU en reposo debería mantenerse por debajo de los 40°C, y bajo carga, no debería exceder los 85°C.
+        </p>
+
+        <h3 class="section-title">Inspección de Componentes</h3>
+        <p>
+            - Revisa que los ventiladores estén funcionando correctamente y sin ruidos inusuales.<br>
+            - Verifica las conexiones del cableado del cooler para asegurar un buen contacto con la placa base.<br>
+            - Inspecciona visualmente el radiador en busca de corrosión o fugas (en caso de sistemas AIO).
+        </p>
+
+        <h3 class="section-title">Preguntas Frecuentes</h3>
+        <p>
+            <strong>¿Cada cuánto debo limpiar mi sistema de enfriamiento?</strong> Se recomienda hacerlo cada 3-6 meses, dependiendo del entorno.<br>
+            <strong>¿Qué debo hacer si mi CPU se sobrecalienta?</strong> Revisa que los ventiladores estén funcionando y que la pasta térmica esté en buen estado.
+        </p>
+    </div>
+</div>
 
 
                 <div class="content-container contenedor_base" id="experto">
@@ -1958,8 +2703,8 @@ require_once __DIR__ . '/../config/conn.php';
                     </div>
 
                     <!-- Teléfono para gamers casuales -->
-
-                    <div class="object__texts contenedor_base" id="promedio">
+                    <div class=" contenedor_base" id="promedio">
+                    <div class="object__texts">
                         <h2 class="subtitle">POCO X6 5G, <span class="object__course">¡Un teléfono potente en gama media, ideal para gaming casual y uso diario!</span></h2>
                         <p class="object__review">
                         <p>Pantalla: AMOLED de 6.67" a 120Hz</p>
@@ -1975,13 +2720,14 @@ require_once __DIR__ . '/../config/conn.php';
                         </p>
                         </p>
                     </div>
-                    <figure class="object__picture contenedor_base" id="promedio">
+                    <figure class="object__picture">
                         <img src="../../public/assets/images/PocoX6.png" class="object__img">
                     </figure>
-
+                    </div>
                     <!-- Teléfono para entusiastas de la fotografía -->
+                    <div class="contenedor_base" id="experto">
 
-                    <div class="object__texts contenedor_base" id="experto">
+                    <div class="object__texts ">
                         <h2 class="subtitle">Sony Xperia 1 V, <span class="object__course">¡El mejor teléfono para fotografía profesional y contenido multimedia!</span></h2>
                         <p class="object__review">
                         <p>Pantalla: OLED 4K de 6.5", relación 21:9, HDR y 120Hz para una experiencia visual cinematográfica.</p>
@@ -1996,21 +2742,18 @@ require_once __DIR__ . '/../config/conn.php';
                         </p>
                         </p>
                     </div>
-                    <figure class="object__picture contenedor_base" id="experto">
+                    <figure class="object__picture " >
                         <img src="../../public/assets/images/Xperia1V.png" class="object__img">
                     </figure>
+                    </div>
                 </section>
 
 
+<!-- Id 2 -->
+<section class="object__body" data-id="2">
 
-
-
-
-                <!-- Id 2 -->
-
-                <!-- Teléfono económico para fotos y redes -->
-                <section class="object__body" data-id="2">
-                    <div class="object__texts">
+                <div class=" contenedor_base" id="principiante">
+                <div class="object__texts">
                         <h2 class="subtitle">Samsung Galaxy A14, <span class="object__course">¡Sencillo y con buena cámara para fotos casuales!</span></h2>
                         <p class="object__review">
                         <p>Un teléfono pensado para quienes disfrutan de compartir fotos y navegar en redes sociales.</p>
@@ -2022,100 +2765,9 @@ require_once __DIR__ . '/../config/conn.php';
                     <figure class="object__picture">
                         <img src="../../public/assets/images/SamsungA14.png" class="object__img">
                     </figure>
-                </section>
-
-                <!-- Teléfono básico para el día a día -->
-                <section class="object__body" data-id="3">
-                    <div class="object__texts">
-                        <h2 class="subtitle">Realme C55, <span class="object__course">¡Perfecto para WhatsApp y videos!</span></h2>
-                        <p class="object__review">
-                        <p>Con este teléfono puedes estar conectado todo el día y disfrutar de videos y llamadas.</p>
-                        <p>Es ligero, sencillo y tiene una batería que aguanta horas de uso continuo.</p>
-                        <br>
-                        <p>Un teléfono práctico para tareas diarias y entretenimiento ligero.</p>
-                        </p>
-                    </div>
-                    <figure class="object__picture">
-                        <img src="../../public/assets/images/RealmeC55.png" class="object__img">
-                    </figure>
-                </section>
-
-                <!-- Teléfono resistente y fácil de usar -->
-                <section class="object__body" data-id="4">
-                    <div class="object__texts">
-                        <h2 class="subtitle">Nokia G22, <span class="object__course">¡Duradero y práctico para el día a día!</span></h2>
-                        <p class="object__review">
-                        <p>Un teléfono diseñado para quienes buscan algo sencillo y resistente.</p>
-                        <p>Su batería dura todo el día y es ideal para llamadas y aplicaciones básicas.</p>
-                        <br>
-                        <p>Perfecto para quienes necesitan un celular confiable y fácil de usar.</p>
-                        </p>
-                    </div>
-                    <figure class="object__picture">
-                        <img src="../../public/assets/images/NokiaG22.png" class="object__img">
-                    </figure>
-                </section>
-
-                <!-- Teléfono para jóvenes y entretenimiento -->
-                <section class="object__body" data-id="5">
-                    <div class="object__texts">
-                        <h2 class="subtitle">Motorola Moto G23, <span class="object__course">¡Fácil de usar y con buena pantalla para ver videos!</span></h2>
-                        <p class="object__review">
-                        <p>Ideal para jóvenes que quieren ver series, usar redes sociales y chatear todo el día.</p>
-                        <p>Es cómodo de llevar y tiene una pantalla grande para disfrutar contenido multimedia.</p>
-                        <br>
-                        <p>Un teléfono accesible con todo lo necesario para entretenimiento diario.</p>
-                        </p>
-                    </div>
-                    <figure class="object__picture">
-                        <img src="../../public/assets/images/MotoG23.png" class="object__img">
-                    </figure>
-                </section>
-
-                <!-- Teléfono económico y ligero -->
-                <section class="object__body" data-id="6">
-                    <div class="object__texts">
-                        <h2 class="subtitle">Infinix Zero 20, <span class="object__course">¡Perfecto para llamadas y fotos casuales!</span></h2>
-                        <p class="object__review">
-                        <p>Un celular básico pero eficiente para tomar fotos, chatear y hacer llamadas.</p>
-                        <p>Es ligero, fácil de usar y con una batería que dura todo el día.</p>
-                        <br>
-                        <p>Ideal para quienes buscan un teléfono funcional y económico.</p>
-                        </p>
-                    </div>
-                    <figure class="object__picture">
-                        <img src="../../public/assets/images/InfinixZero20.png" class="object__img">
-                    </figure>
-                </section>
-
-                <img src="../../public/assets/icons/rightarrow.svg" class="object__arrow" id="next">
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Slider -->
-        <section class="object">
-            <div class="object__container">
-                <img src="../../public/assets/icons/leftarrow.svg" class="object__arrow" id="before">
-
-
-
-                <!-- Teléfono para gamers no casuales -->
-                <section class="object__body" data-id="2">
-                    <div class="object__texts">
+                </div>
+                <div class=" contenedor_base" id="promedio">
+                <div class="object__texts">
                         <h2 class="subtitle">ASUS ROG Phone 7, <span class="object__course">¡El mejor teléfono para gamers exigentes, con características premium para jugar como un profesional!</span></h2>
                         <p class="object__review">
                         <p>Pantalla: AMOLED de 6.78" a 165Hz</p>
@@ -2134,116 +2786,9 @@ require_once __DIR__ . '/../config/conn.php';
                     <figure class="object__picture">
                         <img src="../../public/assets/images/ROGPhone7.png" class="object__img">
                     </figure>
-                </section>
-
-                <!-- Teléfono para uso general y comunicación -->
-                <section class="object__body" data-id="3">
-                    <div class="object__texts">
-                        <h2 class="subtitle">Samsung Galaxy A54 5G, <span class="object__course">¡Un teléfono confiable y versátil, ideal para tareas del día a día!</span></h2>
-                        <p class="object__review">
-                        <p>Pantalla: AMOLED de 6.4" a 120Hz</p>
-                        <p>Procesador: Exynos 1380</p>
-                        <p>Memoria: 8GB RAM, 128GB o 256GB almacenamiento (ampliable con microSD)</p>
-                        <p>Cámara: Trasera: 50MP + 12MP + 5MP; Frontal: 32MP</p>
-                        <p>Batería: 5000mAh con carga rápida de 25W</p>
-                        <p>Conectividad: 5G, Wi-Fi 6, Bluetooth 5.3</p>
-                        <br>
-                        <p>Consideraciones:
-                            Diseño premium con resistencia al agua (IP67).
-                            Carga rápida limitada a 25W.
-                        </p>
-                        </p>
                     </div>
-                    <figure class="object__picture">
-                        <img src="../../public/assets/images/SamsungA54.png" class="object__img">
-                    </figure>
-                </section>
-
-                <!-- Teléfono para fotografía y multitarea -->
-                <section class="object__body" data-id="4">
-                    <div class="object__texts">
-                        <h2 class="subtitle">Google Pixel 7, <span class="object__course">¡Un teléfono para amantes de la fotografía y la multitarea eficiente!</span></h2>
-                        <p class="object__review">
-                        <p>Pantalla: OLED de 6.3" a 90Hz</p>
-                        <p>Procesador: Google Tensor G2</p>
-                        <p>Memoria: 8GB RAM, 128GB o 256GB almacenamiento</p>
-                        <p>Cámara: Trasera: 50MP + 12MP; Frontal: 10.8MP</p>
-                        <p>Batería: 4355mAh con carga rápida de 30W y carga inalámbrica</p>
-                        <p>Conectividad: 5G, Wi-Fi 6E, Bluetooth 5.2</p>
-                        <br>
-                        <p>Consideraciones:
-                            Destacado por su cámara y software optimizado.
-                            Pantalla con frecuencia de actualización más baja que la competencia.
-                        </p>
-                        </p>
-                    </div>
-                    <figure class="object__picture">
-                        <img src="../../public/assets/images/Pixel7.png" class="object__img">
-                    </figure>
-                </section>
-
-                <!-- Teléfono premium para trabajo y rendimiento -->
-                <section class="object__body" data-id="5">
-                    <div class="object__texts">
-                        <h2 class="subtitle">iPhone 14 Pro Max, <span class="object__course">¡Una opción premium para trabajo, diseño y contenido multimedia!</span></h2>
-                        <p class="object__review">
-                        <p>Pantalla: Super Retina XDR de 6.7" con ProMotion a 120Hz</p>
-                        <p>Procesador: Apple A16 Bionic</p>
-                        <p>Memoria: 6GB RAM, 128GB, 256GB, 512GB o 1TB almacenamiento</p>
-                        <p>Cámara: Trasera: 48MP + 12MP + 12MP; Frontal: 12MP</p>
-                        <p>Batería: Hasta 29 horas de reproducción de video</p>
-                        <p>Conectividad: 5G, Wi-Fi 6, Bluetooth 5.3</p>
-                        <br>
-                        <p>Consideraciones:
-                            Calidad y durabilidad excepcionales.
-                            Precio elevado comparado con otras opciones.
-                        </p>
-                        </p>
-                    </div>
-                    <figure class="object__picture">
-                        <img src="../../public/assets/images/iPhone14ProMax.png" class="object__img">
-                    </figure>
-                </section>
-
-                <!-- Teléfono calidad-precio -->
-                <section class="object__body" data-id="6">
-                    <div class="object__texts">
-                        <h2 class="subtitle">Realme GT 2 Pro, <span class="object__course">¡Un teléfono que equilibra características premium y precio accesible!</span></h2>
-                        <p class="object__review">
-                        <p>Pantalla: AMOLED de 6.7" a 120Hz</p>
-                        <p>Procesador: Qualcomm Snapdragon 8 Gen 1</p>
-                        <p>Memoria: 8GB o 12GB RAM, 128GB o 256GB almacenamiento</p>
-                        <p>Cámara: Trasera: 50MP + 50MP + lente microscópico; Frontal: 32MP</p>
-                        <p>Batería: 5000mAh con carga rápida de 65W</p>
-                        <p>Conectividad: 5G, Wi-Fi 6, Bluetooth 5.2</p>
-                        <br>
-                        <p>Consideraciones:
-                            Excelente cámara y pantalla de alta calidad.
-                            Sin carga inalámbrica ni resistencia al agua.
-                        </p>
-                        </p>
-                    </div>
-                    <figure class="object__picture">
-                        <img src="../../public/assets/images/RealmeGT2Pro.png" class="object__img">
-                    </figure>
-                </section>
-
-                <img src="../../public/assets/icons/rightarrow.svg" class="object__arrow" id="next">
-            </div>
-        </section>
-
-
-
-
-        <!-- Slider -->
-        <section class="object">
-            <div class="object__container">
-                <img src="../../public/assets/icons/leftarrow.svg" class="object__arrow" id="before">
-
-
-
-                <!-- Teléfono gaming extremo -->
-                <section class="object__body" data-id="2">
+                    
+                    <div class=" contenedor_base" id="experto">
                     <div class="object__texts">
                         <h2 class="subtitle">Nubia RedMagic 8S Pro+, <span class="object__course">¡El tope de gama para gamers exigentes!</span></h2>
                         <p class="object__review">
@@ -2262,11 +2807,50 @@ require_once __DIR__ . '/../config/conn.php';
                     <figure class="object__picture">
                         <img src="../../public/assets/images/RedMagic8SProPlus.png" class="object__img">
                     </figure>
-                </section>
+                        </div>
+</section>
+                        <!-- Id 3 -->
+                <section class="object__body" data-id="3">
 
-                <!-- Teléfono con equilibrio premium -->
-                <section class="object__body " data-id="3">
-                    <div class="object__texts">
+                <div class=" contenedor_base" id="principiante">
+                <div class="object__texts">
+                        <h2 class="subtitle">Realme C55, <span class="object__course">¡Perfecto para WhatsApp y videos!</span></h2>
+                        <p class="object__review">
+                        <p>Con este teléfono puedes estar conectado todo el día y disfrutar de videos y llamadas.</p>
+                        <p>Es ligero, sencillo y tiene una batería que aguanta horas de uso continuo.</p>
+                        <br>
+                        <p>Un teléfono práctico para tareas diarias y entretenimiento ligero.</p>
+                        </p>
+                    </div>
+                    <figure class="object__picture">
+                        <img src="../../public/assets/images/RealmeC55.png" class="object__img">
+                    </figure>
+                </div>
+
+                <div class=" contenedor_base" id="promedio">
+                <div class="object__texts">
+                        <h2 class="subtitle">Samsung Galaxy A54 5G, <span class="object__course">¡Un teléfono confiable y versátil, ideal para tareas del día a día!</span></h2>
+                        <p class="object__review">
+                        <p>Pantalla: AMOLED de 6.4" a 120Hz</p>
+                        <p>Procesador: Exynos 1380</p>
+                        <p>Memoria: 8GB RAM, 128GB o 256GB almacenamiento (ampliable con microSD)</p>
+                        <p>Cámara: Trasera: 50MP + 12MP + 5MP; Frontal: 32MP</p>
+                        <p>Batería: 5000mAh con carga rápida de 25W</p>
+                        <p>Conectividad: 5G, Wi-Fi 6, Bluetooth 5.3</p>
+                        <br>
+                        <p>Consideraciones:
+                            Diseño premium con resistencia al agua (IP67).
+                            Carga rápida limitada a 25W.
+                        </p>
+                        </p>
+                    </div>
+                    <figure class="object__picture">
+                        <img src="../../public/assets/images/SamsungA54.png" class="object__img">
+                    </figure>
+                </div>
+
+                <div class=" contenedor_base" id="experto">
+                <div class="object__texts">
                         <h2 class="subtitle">Vivo X90 Pro+, <span class="object__course">¡La elección para fotografía, rendimiento y diseño premium!</span></h2>
                         <p class="object__review">
                         <p>Pantalla: AMOLED LTPO4 de 6.78" con 120Hz y soporte Dolby Vision.</p>
@@ -2282,11 +2866,50 @@ require_once __DIR__ . '/../config/conn.php';
                     <figure class="object__picture">
                         <img src="../../public/assets/images/VivoX90ProPlus.png" class="object__img">
                     </figure>
+                </div>
                 </section>
+                <!-- Id 4 -->
+                <section class="object__body" data-id="4">
 
-                <!-- Teléfono plegable de alta gama -->
-                <section class="object__body " data-id="4">
-                    <div class="object__texts">
+                <div class=" contenedor_base" id="principiante">
+                <div class="object__texts">
+                        <h2 class="subtitle">Nokia G22, <span class="object__course">¡Duradero y práctico para el día a día!</span></h2>
+                        <p class="object__review">
+                        <p>Un teléfono diseñado para quienes buscan algo sencillo y resistente.</p>
+                        <p>Su batería dura todo el día y es ideal para llamadas y aplicaciones básicas.</p>
+                        <br>
+                        <p>Perfecto para quienes necesitan un celular confiable y fácil de usar.</p>
+                        </p>
+                    </div>
+                    <figure class="object__picture">
+                        <img src="../../public/assets/images/NokiaG22.png" class="object__img">
+                    </figure>
+                </div>
+
+                <div class=" contenedor_base" id="promedio">
+                <div class="object__texts">
+                        <h2 class="subtitle">Google Pixel 7, <span class="object__course">¡Un teléfono para amantes de la fotografía y la multitarea eficiente!</span></h2>
+                        <p class="object__review">
+                        <p>Pantalla: OLED de 6.3" a 90Hz</p>
+                        <p>Procesador: Google Tensor G2</p>
+                        <p>Memoria: 8GB RAM, 128GB o 256GB almacenamiento</p>
+                        <p>Cámara: Trasera: 50MP + 12MP; Frontal: 10.8MP</p>
+                        <p>Batería: 4355mAh con carga rápida de 30W y carga inalámbrica</p>
+                        <p>Conectividad: 5G, Wi-Fi 6E, Bluetooth 5.2</p>
+                        <br>
+                        <p>Consideraciones:
+                            Destacado por su cámara y software optimizado.
+                            Pantalla con frecuencia de actualización más baja que la competencia.
+                        </p>
+                        </p>
+                    </div>
+                    <figure class="object__picture">
+                        <img src="../../public/assets/images/Pixel7.png" class="object__img">
+                    </figure>
+                </div>
+
+                <div class=" contenedor_base" id="experto">
+                <div class="object__texts">
                         <h2 class="subtitle">Honor Magic Vs, <span class="object__course">¡El mejor plegable para productividad y entretenimiento!</span></h2>
                         <p class="object__review">
                         <p>Pantalla principal: OLED de 7.9" con soporte HDR10+.</p>
@@ -2303,11 +2926,50 @@ require_once __DIR__ . '/../config/conn.php';
                     <figure class="object__picture">
                         <img src="../../public/assets/images/HonorMagicVs.png" class="object__img">
                     </figure>
+                </div>
                 </section>
-
-                <!-- Teléfono con gran relación calidad-precio -->
+                <!-- Id 5 -->
                 <section class="object__body" data-id="5">
-                    <div class="object__texts">
+
+                <div class=" contenedor_base" id="principiante">
+                <div class="object__texts">
+                        <h2 class="subtitle">Motorola Moto G23, <span class="object__course">¡Fácil de usar y con buena pantalla para ver videos!</span></h2>
+                        <p class="object__review">
+                        <p>Ideal para jóvenes que quieren ver series, usar redes sociales y chatear todo el día.</p>
+                        <p>Es cómodo de llevar y tiene una pantalla grande para disfrutar contenido multimedia.</p>
+                        <br>
+                        <p>Un teléfono accesible con todo lo necesario para entretenimiento diario.</p>
+                        </p>
+                    </div>
+                    <figure class="object__picture">
+                        <img src="../../public/assets/images/MotoG23.png" class="object__img">
+                    </figure>
+                </div>
+
+                <div class=" contenedor_base" id="promedio">
+                <div class="object__texts">
+                        <h2 class="subtitle">iPhone 14 Pro Max, <span class="object__course">¡Una opción premium para trabajo, diseño y contenido multimedia!</span></h2>
+                        <p class="object__review">
+                        <p>Pantalla: Super Retina XDR de 6.7" con ProMotion a 120Hz</p>
+                        <p>Procesador: Apple A16 Bionic</p>
+                        <p>Memoria: 6GB RAM, 128GB, 256GB, 512GB o 1TB almacenamiento</p>
+                        <p>Cámara: Trasera: 48MP + 12MP + 12MP; Frontal: 12MP</p>
+                        <p>Batería: Hasta 29 horas de reproducción de video</p>
+                        <p>Conectividad: 5G, Wi-Fi 6, Bluetooth 5.3</p>
+                        <br>
+                        <p>Consideraciones:
+                            Calidad y durabilidad excepcionales.
+                            Precio elevado comparado con otras opciones.
+                        </p>
+                        </p>
+                    </div>
+                    <figure class="object__picture">
+                        <img src="../../public/assets/images/iPhone14ProMax.png" class="object__img">
+                    </figure>
+                </div>
+
+                <div class=" contenedor_base" id="experto">
+                <div class="object__texts">
                         <h2 class="subtitle">Realme GT Neo 5, <span class="object__course">¡El equilibrio perfecto entre precio y rendimiento avanzado!</span></h2>
                         <p class="object__review">
                         <p>Pantalla: AMOLED de 6.74" con 144Hz y HDR10+.</p>
@@ -2323,11 +2985,51 @@ require_once __DIR__ . '/../config/conn.php';
                     <figure class="object__picture">
                         <img src="../../public/assets/images/RealmeGTNeo5.png" class="object__img">
                     </figure>
+                </div>
                 </section>
 
-                <!-- Teléfono ultra premium -->
-                <section class="object__body " data-id="6">
-                    <div class="object__texts">
+                <!-- Id 6 -->
+                <section class="object__body" data-id="6">
+
+                <div class=" contenedor_base" id="principiante">
+                <div class="object__texts">
+                        <h2 class="subtitle">Infinix Zero 20, <span class="object__course">¡Perfecto para llamadas y fotos casuales!</span></h2>
+                        <p class="object__review">
+                        <p>Un celular básico pero eficiente para tomar fotos, chatear y hacer llamadas.</p>
+                        <p>Es ligero, fácil de usar y con una batería que dura todo el día.</p>
+                        <br>
+                        <p>Ideal para quienes buscan un teléfono funcional y económico.</p>
+                        </p>
+                    </div>
+                    <figure class="object__picture">
+                        <img src="../../public/assets/images/InfinixZero20.png" class="object__img">
+                    </figure>
+                </div>
+
+                <div class=" contenedor_base" id="promedio">
+                <div class="object__texts">
+                        <h2 class="subtitle">Realme GT 2 Pro, <span class="object__course">¡Un teléfono que equilibra características premium y precio accesible!</span></h2>
+                        <p class="object__review">
+                        <p>Pantalla: AMOLED de 6.7" a 120Hz</p>
+                        <p>Procesador: Qualcomm Snapdragon 8 Gen 1</p>
+                        <p>Memoria: 8GB o 12GB RAM, 128GB o 256GB almacenamiento</p>
+                        <p>Cámara: Trasera: 50MP + 50MP + lente microscópico; Frontal: 32MP</p>
+                        <p>Batería: 5000mAh con carga rápida de 65W</p>
+                        <p>Conectividad: 5G, Wi-Fi 6, Bluetooth 5.2</p>
+                        <br>
+                        <p>Consideraciones:
+                            Excelente cámara y pantalla de alta calidad.
+                            Sin carga inalámbrica ni resistencia al agua.
+                        </p>
+                        </p>
+                    </div>
+                    <figure class="object__picture">
+                        <img src="../../public/assets/images/RealmeGT2Pro.png" class="object__img">
+                    </figure>
+                </div>
+
+                <div class=" contenedor_base" id="experto">
+                <div class="object__texts">
                         <h2 class="subtitle">Xiaomi 13 Ultra, <span class="object__course">¡La experiencia más avanzada en cámaras y diseño!</span></h2>
                         <p class="object__review">
                         <p>Pantalla: AMOLED LTPO de 6.73" con resolución 2K, 120Hz y Dolby Vision.</p>
@@ -2343,15 +3045,12 @@ require_once __DIR__ . '/../config/conn.php';
                     <figure class="object__picture">
                         <img src="../../public/assets/images/Xiaomi13Ultra.png" class="object__img">
                     </figure>
+                </div>
                 </section>
 
                 <img src="../../public/assets/icons/rightarrow.svg" class="object__arrow" id="next">
             </div>
         </section>
-
-
-
-
 
         <!-- Info Container -->
         <section class="knowledge contenedor_base" id="principiante">
@@ -2707,22 +3406,11 @@ require_once __DIR__ . '/../config/conn.php';
             </div>
 
             <div class="footer__section">
-                <h3 class="footer__title">Enlaces</h3>
-                <div class="footer__links">
-                    <a href="#inicio" class="footer__link"><i class="bi bi-chevron-right"></i> Inicio</a>
-                    <a href="#inicio" class="footer__link"><i class="bi bi-chevron-right"></i> Iniciar Sesion</a>
-                    <a href="#inicio" class="footer__link"><i class="bi bi-chevron-right"></i> Registrar</a>
-                </div>
-            </div>
-
-            <div class="footer__section">
                 <h3 class="footer__title">Secciones</h3>
                 <div class="footer__links">
                     <a href="#" class="footer__link"><i class="bi bi-pc-display"></i> PCs-Escritorio </a>
-                    <a href="#" class="footer__link"><i class="bi bi-code-square"></i> Software</a>
                     <a href="#" class="footer__link"><i class="bi bi-people"></i> Recomendaciones</a>
                     <a href="#" class="footer__link"><i class="bi bi-tools"></i> Componentes</a>
-                    <a href="#" class="footer__link"><i class="bi bi-hdd-network"></i> Hardware</a>
 
                 </div>
             </div>

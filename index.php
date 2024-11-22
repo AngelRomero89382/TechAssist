@@ -572,10 +572,8 @@ if ($authModel->checkAuth() && basename($_SERVER['PHP_SELF']) === 'index.php') {
         <h3 class="footer__title">Secciones</h3>
         <div class="footer__links">
                     <a href="#" class="footer__link"><i class="bi bi-pc-display"></i> PCs-Escritorio </a>
-                    <a href="#" class="footer__link"><i class="bi bi-code-square"></i> Software</a>
                     <a href="#" class="footer__link"><i class="bi bi-people"></i> Recomendaciones</a>
                     <a href="#" class="footer__link"><i class="bi bi-tools"></i> Componentes</a>
-                    <a href="#" class="footer__link"><i class="bi bi-hdd-network"></i> Hardware</a>
 
         </div>
       </div>
