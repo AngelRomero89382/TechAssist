@@ -285,65 +285,6 @@ if ($authModel->checkAuth() && basename($_SERVER['PHP_SELF']) === 'index.php') {
 
 
 
-  <!-- Questions Section -->
-  <section id="faq" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
-
-      <div class="accordion" id="faqAccordion">
-        <div class="accordion-item">
-          <h3 class="accordion-header" id="heading1">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
-              aria-expanded="true" aria-controls="collapse1">
-              ¿Cuánta potencia necesito?
-            </button>
-          </h3>
-          <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
-            data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              Depende de los componentes de tu sistema. Las tarjetas gráficas y CPUs de alta gama requieren más energía.
-              Usa una calculadora de potencia para obtener una estimación.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h3 class="accordion-header" id="heading2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-              ¿Qué son los rieles de 12V?
-            </button>
-          </h3>
-          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
-            data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              Los rieles de 12V suministran energía a tus componentes más importantes, como la CPU y la GPU. Las PSU de
-              mejor calidad tienen rieles de 12V separados para una entrega de energía más estable.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h3 class="accordion-header" id="heading3">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-              ¿Qué es la modulación?
-            </button>
-          </h3>
-          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
-            data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              Las PSUs modulares permiten desconectar los cables que no necesitas, mejorando la gestión de cables y el
-              flujo de aire en tu caso. Las PSUs semi-modulares tienen algunos cables fijos y algunos desmontables.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
   <!-- Info Container -->
   <section class="knowledge">
     <div class="knowledge__container container">
