@@ -6,6 +6,7 @@
  * Este archivo es parte de TechAssist y está protegido por derechos de autor.
  * Uso no autorizado de este código está prohibido.
  */
+
 let registerErrorModal;
 let registerSuccessModal;
 let loadingOverlay;

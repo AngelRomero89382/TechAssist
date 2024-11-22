@@ -125,7 +125,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('errorMsg').textContent =
                     error.message || 'Los datos ingresados no coinciden con tu cuenta';
                 errorModal.show();
-            }, 500);
+                setTimeout  (() => {
+                    errorModal.hide();
+                    }, 3000);
+            }, 100);
         } finally {
             loadingOverlay.classList.add('vanish');
         }
@@ -155,6 +158,10 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('errorMsg').textContent =
                 error.message || 'Error al eliminar la cuenta';
             errorModal.show();
+
+            setTimeout  (() => {
+            errorModal.classList.remove('vanish');
+            }, 3000);
         }
     });
 

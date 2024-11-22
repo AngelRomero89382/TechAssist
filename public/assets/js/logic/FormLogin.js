@@ -7,6 +7,7 @@
  * Uso no autorizado de este código está prohibido.
  */
 
+
 const shadowScreen_2 = document.getElementById('login-shadowLayer');
 const activate_2 = document.getElementById('login-triggerLayer');
 const ExitBtn_2 = document.querySelector('.login-exitTrigger');

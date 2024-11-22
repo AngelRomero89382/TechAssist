@@ -6,6 +6,7 @@
  * Este archivo es parte de TechAssist y está protegido por derechos de autor.
  * Uso no autorizado de este código está prohibido.
 -->
+ 
 <?php
 require_once 'app/config/conn.php';
 require_once 'app/models/AuthModel.php';
@@ -644,7 +645,7 @@ if ($authModel->checkAuth() && basename($_SERVER['PHP_SELF']) === 'index.php') {
           <a href="https://www.facebook.com/profile.php?id=61568955356110" class="footer__social-icon" aria-label="Facebook">
             <i class="bi bi-facebook"></i>
           </a>
-          <a href="#" class="footer__social-icon" aria-label="github">
+          <a href="https://github.com/AngelRomero89382/TechAssist" class="footer__social-icon" aria-label="github">
             <i class="bi bi-github"></i>
           </a>
         </div>

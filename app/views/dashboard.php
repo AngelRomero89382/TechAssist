@@ -95,13 +95,7 @@ require_once __DIR__ . '/../config/conn.php';
                         <a class="nav-link" href="#"><i class="bi bi-phone-fill"></i> Teléfonos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-laptop"></i> Portátiles</a>
-                    </li>
-                    <li class="nav-item">
                         <a onclick="PcMenu()" class="nav-link" href="#"><i class="bi bi-pc-display"></i> PCs-Escritorio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-controller"></i> Consolas</a>
                     </li>
                     <li class="nav-item">
                         <a id="logoutBtn" class="nav-link" style="cursor: pointer;">
@@ -114,7 +108,8 @@ require_once __DIR__ . '/../config/conn.php';
     </nav>
 
 
-
+    <div id="userLevel" class="userLevel">que honda</div>
+    </div>
 
     <main>
         <header class="hero_main">
@@ -130,7 +125,11 @@ require_once __DIR__ . '/../config/conn.php';
                             <h1 class="hero-title">¡<span style="color: #ff7143;">Aprende</span> como funciona una <span style="color: #ff7143;">computadora</span>!</h1>
                             <p class="hero_text">Aprende como es desde su interior y cual es la mejor para ti</p>
                             <div class="hero-actions">
-                                <button type="button" class="btn btn-outline-light" onclick="PcMenu()">Menu</button>
+                                <button type="button" class="btn btn-outline-light" onclick="PcMenu()">PCs-Escritorio</button>
+                            </div>
+                            <br>
+                            <div class="hero-actions">
+                                <button type="button" class="btn btn-outline-light" onclick="PhoneMenu()">Smartphones</button>
                             </div>
                         </div>
                     </div>
@@ -235,6 +234,8 @@ require_once __DIR__ . '/../config/conn.php';
 
                     <div class="card">
                         <img src="../../public/assets/images/Pc-CuidadosPrincipiante.png" class="card-img-top size-img" alt="Accesorios">
+                        <img src="../../public/assets/images/Pc-CuidadosPromedio.avif" class="card-img-top size-img" alt="Accesorios">
+                        <img src="../../public/assets/images/Pc-CuidadosExperto.webp" class="card-img-top size-img" alt="Accesorios">
                         <div class="card-body">
                             <h5 class="card-title">Cuidados</h5>
                             <p class="card-text" id="option-accessories">Los accesorios de una PC que añaden funciones: monitor (pantalla), teclado, ratón, altavoces, y cámara web.</p>
@@ -300,47 +301,42 @@ require_once __DIR__ . '/../config/conn.php';
             </div>
         </section>
     </main>
-    <!-- Modal para eliminar cuenta -->
-    <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header modal-top errorModal">
-                    <h5 class="modal-title">Eliminar Cuenta</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center">
-                    <i class="bi bi-exclamation-triangle warning-icon"></i>
-                    <span>¿Estás seguro de que deseas eliminar tu cuenta? Esta acción no se puede deshacer.</span>
-                </div>
-                <div class="modal-footer border-0">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="accept-btn errorModal" id="confirmDelete">
-                        Eliminar Cuenta
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal de error -->
-    <div class="modal fade" id="errorModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header modal-top errorModal">
-                    <h5 class="modal-title">Error</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center">
-                    <i class="bi bi-exclamation-triangle warning-icon"></i>
-                    <span id="errorMsg"></span>
-                </div>
-                <div class="modal-footer border-0">
-                    <button type="button" class="accept-btn errorModal" data-bs-dismiss="modal">Aceptar</button>
+     <!-- Modal para eliminar cuenta -->
+     <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header modal-top errorModal">
+                        <h5 class="modal-title">Eliminar Cuenta</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <i class="bi bi-exclamation-triangle warning-icon"></i>
+                        <span>¿Estás seguro de que deseas eliminar tu cuenta? Esta acción no se puede deshacer.</span>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="accept-btn errorModal" id="confirmDelete">
+                            Eliminar Cuenta
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
+        <!-- Modal de error -->
+        <div class="modal fade" id="errorModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header modal-top errorModal">
+                        <h5 class="modal-title">Error</h5>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <i class="bi bi-exclamation-triangle warning-icon" style="color:red;"></i>
+                        <span id="errorMsg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Overlay de carga -->
     <div id="loadingOverlay" class="shadowLayer vanish">
         <div class="reg-panel p-4 text-center" style="width: auto !important; height: auto !important;">
@@ -351,208 +347,199 @@ require_once __DIR__ . '/../config/conn.php';
         </div>
     </div>
 
-    <div id="userLevel" class="userLevel">que honda</div>
-    </div>
+
 
 
 
     <!-- Modal de verificación antes de eliminar -->
     <div id="verifyDeleteModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="verifyDeleteTitle">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header modal-top errorModal">
+                        <h5 class="modal-title" id="verifyDeleteTitle">Verificar Cuenta</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Por seguridad, verifica tu cuenta antes de eliminarla:</p>
+                        <div class="mb-3">
+                            <label class="input-tag">Correo electrónico</label>
+                            <input type="email" id="verifyEmail" class="form-field w-100">
+                            <div id="verifyEmailError" class="alert-message">
+                                Por favor ingresa tu correo electrónico.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="input-tag">Nombre de usuario</label>
+                            <input type="text" id="verifyUsername" class="form-field w-100">
+                            <div id="verifyUsernameError" class="alert-message">
+                                Por favor ingresa tu nombre de usuario.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="accept-btn errorModal" id="verifyDeleteBtn">
+                            Verificar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Modal Datos de la Cuenta -->
+    <div class="modal fade" id="accountDataModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header modal-top errorModal">
-                    <h5 class="modal-title" id="verifyDeleteTitle">Verificar Cuenta</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                <div class="modal-header modal-top" style="background: var(--turquoise)">
+                    <h5 class="modal-title">
+                        <i class="bi bi-person-circle me-2"></i>
+                        Datos de la Cuenta
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <p>Por seguridad, verifica tu cuenta antes de eliminarla:</p>
-                    <div class="mb-3">
-                        <label class="input-tag">Correo electrónico</label>
-                        <input type="email" id="verifyEmail" class="form-field w-100">
-                        <div id="verifyEmailError" class="alert-message">
-                            Por favor ingresa tu correo electrónico.
+                <div class="modal-body px-4 py-3">
+                    <div class="account-info">
+                        <div class="info-item">
+                            <span class="info-label"><i class="bi bi-person"></i> Usuario:</span>
+                            <span id="accountUsername" class="info-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="bi bi-envelope"></i> Email:</span>
+                            <span id="accountEmail" class="info-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="bi bi-star"></i> Nivel:</span>
+                            <span id="accountLevel" class="info-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="bi bi-calendar"></i> Registro:</span>
+                            <span id="accountRegDate" class="info-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="bi bi-clock"></i> Última sesión:</span>
+                            <span id="accountLastLogin" class="info-value"></span>
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label class="input-tag">Nombre de usuario</label>
-                        <input type="text" id="verifyUsername" class="form-field w-100">
-                        <div id="verifyUsernameError" class="alert-message">
-                            Por favor ingresa tu nombre de usuario.
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer border-0">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="accept-btn errorModal" id="verifyDeleteBtn">
-                        Verificar
-                    </button>
                 </div>
             </div>
         </div>
     </div>
 
-<!-- Modal Datos de la Cuenta -->
-<div class="modal fade" id="accountDataModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header modal-top" style="background: var(--turquoise)">
-                <h5 class="modal-title">
-                    <i class="bi bi-person-circle me-2"></i>
-                    Datos de la Cuenta
-                </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body px-4 py-3">
-                <div class="account-info">
-                    <div class="info-item">
-                        <span class="info-label"><i class="bi bi-person"></i> Usuario:</span>
-                        <span id="accountUsername" class="info-value"></span>
+    <!-- Modal Historial -->
+    <div class="modal fade" id="historyModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-top" style="background: var(--blue)">
+                    <h5 class="modal-title">
+                        <i class="bi bi-clock-history me-2"></i>
+                        Historial de Actividad
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="history-list">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Fecha y Hora</th>
+                                    <th>Actividad</th>
+                                    <th>Dispositivo</th>
+                                    <th>Navegador</th>
+                                </tr>
+                            </thead>
+                            <tbody id="historyTableBody">
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="info-item">
-                        <span class="info-label"><i class="bi bi-envelope"></i> Email:</span>
-                        <span id="accountEmail" class="info-value"></span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label"><i class="bi bi-star"></i> Nivel:</span>
-                        <span id="accountLevel" class="info-value"></span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label"><i class="bi bi-calendar"></i> Registro:</span>
-                        <span id="accountRegDate" class="info-value"></span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label"><i class="bi bi-clock"></i> Última sesión:</span>
-                        <span id="accountLastLogin" class="info-value"></span>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <div class="d-flex gap-3 justify-content-center w-100">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-shield-check text-info me-2"></i>
+                            <small>Sesión Permanente</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-box-arrow-in-right text-success me-2"></i>
+                            <small>Inicio Sesión</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-box-arrow-right text-warning me-2"></i>
+                            <small>Cierre Sesión</small>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-- Modal Historial -->
-<!-- Modal Historial -->
-<div class="modal fade" id="historyModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header modal-top" style="background: var(--blue)">
-                <h5 class="modal-title">
-                    <i class="bi bi-clock-history me-2"></i>
-                    Historial de Actividad
-                </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body p-0">
-                <div class="history-list">
-                    <table class="table table-hover mb-0">
-                        <thead>
-                            <tr>
-                                <th>Fecha y Hora</th>
-                                <th>Actividad</th>
-                                <th>Dispositivo</th>
-                                <th>Navegador</th>
-                            </tr>
-                        </thead>
-                        <tbody id="historyTableBody">
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="modal-footer border-top-0">
-                <div class="d-flex gap-3 justify-content-center w-100">
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-shield-check text-info me-2"></i>
-                        <small>Sesión Permanente</small>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-box-arrow-in-right text-success me-2"></i>
-                        <small>Inicio Sesión</small>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-box-arrow-right text-warning me-2"></i>
-                        <small>Cierre Sesión</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
     <!-- Footer -->
     <footer class="footer">
 
-        <div class="footer__container">
-            <div class="footer__section">
-                <h3 class="footer__title"><span style="color: aliceblue !important;">Tech</span>Assist <img src="../../public/assets/favicon/TechAssist-favicon.png" class="favicon" alt=""></h3>
-                <div class="footer__content">
-                    <p></p>
-                    <div class="footer__contact">
-                        <p><i class="bi bi-telephone"></i><a href="tel:+52 777 439 5441" style="color: inherit; text-decoration: none;">+52 777 439 5441</a></p>
-                        <p><i class="bi bi-envelope"></i><a href="mailto:support@techassistpro.pro" style="color: inherit; text-decoration: none;">support@techassistpro.pro</a></p>
-                    </div>
-                </div>
-            </div>
+<div class="footer__container">
+  <div class="footer__section">
+    <h3 class="footer__title"><span style="color: aliceblue !important;">Tech</span>Assist <img src="../../public/assets/favicon/TechAssist-favicon.png" class="favicon" alt=""></h3>
+    <div class="footer__content">
+      <p></p>
+      <div class="footer__contact">
+        <p><i class="bi bi-telephone"></i><a href="tel:+52 777 439 5441" style="color: inherit; text-decoration: none;">+52 777 439 5441</a></p>
+        <p><i class="bi bi-envelope"></i><a href="mailto:support@techassistpro.pro" style="color: inherit; text-decoration: none;">support@techassistpro.pro</a></p>
+      </div>
+    </div>
+  </div>
 
-            <div class="footer__section">
-                <h3 class="footer__title">Enlaces</h3>
-                <div class="footer__links">
-                    <a href="#inicio" class="footer__link"><i class="bi bi-chevron-right"></i> Inicio</a>
-                    <a href="#inicio" class="footer__link"><i class="bi bi-chevron-right"></i> Iniciar Sesion</a>
-                    <a href="#inicio" class="footer__link"><i class="bi bi-chevron-right"></i> Registrar</a>
-                </div>
-            </div>
+  <div class="footer__section">
+    <h3 class="footer__title">Enlaces</h3>
+    <div class="footer__links">
+      <a href="#inicio" class="footer__link"><i class="bi bi-chevron-right"></i> Inicio</a>
+      <a href="#inicio" class="footer__link"><i class="bi bi-chevron-right"></i> Iniciar Sesion</a>
+      <a href="#inicio" class="footer__link"><i class="bi bi-chevron-right"></i> Registrar</a>
+    </div>
+  </div>
 
-            <div class="footer__section">
-                <h3 class="footer__title">Servicios</h3>
-                <div class="footer__links">
-                    <a href="#" class="footer__link"><i class="bi bi-pc-display"></i> PCs-Escritorio </a>
-                    <a href="#" class="footer__link"><i class="bi bi-code-square"></i> Software</a>
-                    <a href="#" class="footer__link"><i class="bi bi-people"></i> Recomendaciones</a>
-                    <a href="#" class="footer__link"><i class="bi bi-tools"></i> Ensambles</a>
-                    <a href="#" class="footer__link"><i class="bi bi-hdd-network"></i> Otros</a>
+  <div class="footer__section">
+    <h3 class="footer__title">Secciones</h3>
+    <div class="footer__links">
+                <a href="#" class="footer__link"><i class="bi bi-pc-display"></i> PCs-Escritorio </a>
+                <a href="#" class="footer__link"><i class="bi bi-code-square"></i> Software</a>
+                <a href="#" class="footer__link"><i class="bi bi-people"></i> Recomendaciones</a>
+                <a href="#" class="footer__link"><i class="bi bi-tools"></i> Componentes</a>
+                <a href="#" class="footer__link"><i class="bi bi-hdd-network"></i> Hardware</a>
 
-                </div>
-            </div>
+    </div>
+  </div>
 
-            <div class="footer__section">
-                <h3 class="footer__title">Síguenos</h3>
-                <div class="footer__social">
-                    <a href="https://www.facebook.com/profile.php?id=61568955356110" class="footer__social-icon" aria-label="Facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="footer__social-icon" aria-label="Twitter">
-                        <i class="bi bi-twitter-x"></i>
-                    </a>
-                    <a href="#" class="footer__social-icon" aria-label="Instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" class="footer__social-icon" aria-label="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+  <div class="footer__section">
+    <h3 class="footer__title">Síguenos</h3>
+    <div class="footer__social">
+      <a href="https://www.facebook.com/profile.php?id=61568955356110" class="footer__social-icon" aria-label="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://github.com/AngelRomero89382/TechAssist" class="footer__social-icon" aria-label="github">
+        <i class="bi bi-github"></i>
+      </a>
+    </div>
+  </div>
+</div>
 
-        <div class="footer__bottom">
-            <div class="footer__divider"></div>
-            <p class="footer__copyright">
-                © <span id="currentYear"></span> TechAssist - Todos los derechos reservados | Diseñado por Angel Jesús Romero
-                Pérez.
-            </p>
-        </div>
-    </footer>
-    </script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
+<div class="footer__bottom">
+  <div class="footer__divider"></div>
+  <p class="footer__copyright">
+    © <span id="currentYear"></span> TechAssist - Todos los derechos reservados | Diseñado por Angel Jesús Romero
+    Pérez, Luis Angel Martinez Ponce de Leon, .
+  </p>
+</div>
+</footer>
+
+
+    <script src="../../public/assets/js/animation/pc.js"></script>
+    <script src="../../public/assets/js/animation/nav.js"></script>
+    <script src="../../public/assets/js/logic/getUserLevel.js"></script>
+    <script src="../../public/assets/js/logic/logout.js"></script>
+    <script src="../../public/assets/js/logic/deleteAccount.js"></script>
+    <script src="../../public/assets/js/logic/accountInfo.js"></script>
 
     <script src="../../public/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-<script src="../../public/assets/js/animation/pc.js"></script>
-<script src="../../public/assets/js/animation/nav.js"></script>
-<script src="../../public/assets/js/logic/getUserLevel.js"></script>
-<script src="../../public/assets/js/logic/logout.js"></script>
-<script src="../../public/assets/js/logic/deleteAccount.js"></script>
-<!-- Agrega este nuevo script al final -->
-<script src="../../public/assets/js/logic/accountInfo.js"></script>
+
 
 
 </body>
