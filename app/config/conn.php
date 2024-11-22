@@ -14,9 +14,9 @@
 class Database {
     private $conn = null;
     private $host = "localhost";
-    private $user = "root";
-    private $pass = "";
-    private $db = "tech_assist";
+    private $user = "u409226135_TechAssistRoot";
+    private $pass = "TechAssist1234";
+    private $db = "u409226135_tech_assist";
     
     public function __construct() {
         try {

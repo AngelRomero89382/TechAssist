@@ -1,4 +1,12 @@
-// Variables para cada componente
+/*
+ * TechAssist - Sistema de Aprendizaje Interactivo
+ * Copyright (c) 2024 TechAssist
+ * Autor: Angel Jesús Romero Pérez
+ * 
+ * Este archivo es parte de TechAssist y está protegido por derechos de autor.
+ * Uso no autorizado de este código está prohibido.
+ */
+
 let originalCPUCard;
 let originalRAMCard;
 let originalMotherboardCard;

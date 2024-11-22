@@ -71,7 +71,7 @@ if ($authModel->checkAuth() && basename($_SERVER['PHP_SELF']) === 'index.php') {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="/index.php"><i class="bi bi-house"></i> Inicio</a>
+            <a class="nav-link active" href="index.php"><i class="bi bi-house"></i> Inicio</a>
           </li>
           <li class="nav-item">
             <a id="login-triggerLayer" class="nav-link" style="cursor: pointer;"><i class="bi bi-person-fill"></i> Iniciar
