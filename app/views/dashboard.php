@@ -741,12 +741,68 @@ require_once __DIR__ . '/../config/conn.php';
                         <p class="card-text expert" id="option-powerSource">Selecciona una fuente modular de alta eficiencia (80 Plus Gold o superior) y verifica la calidad de sus conectores PCIe.</p>
                     </div>
                 </div>
-                <div class="content-container">
-                    <div class="inner-container">
-                        <!-- Contenido específico de CPU -->
-                    </div>
+            </div>
+            <div class="content-container">
+                <div class="inner-container">
+                    <!-- Questions Section -->
+                    <section id="faq" class="py-5">
+                        <div class="container">
+                            <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
+
+                            <div class="accordion" id="faqAccordion">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="heading1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                                            aria-expanded="true" aria-controls="collapse1">
+                                            ¿Cuánta potencia necesito?
+                                        </button>
+                                    </h3>
+                                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Depende de los componentes de tu sistema. Las tarjetas gráficas y CPUs de alta gama requieren más energía.
+                                            Usa una calculadora de potencia para obtener una estimación.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="heading2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                            ¿Qué son los rieles de 12V?
+                                        </button>
+                                    </h3>
+                                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Los rieles de 12V suministran energía a tus componentes más importantes, como la CPU y la GPU. Las PSU de
+                                            mejor calidad tienen rieles de 12V separados para una entrega de energía más estable.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="heading3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                            ¿Qué es la modulación?
+                                        </button>
+                                    </h3>
+                                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Las PSUs modulares permiten desconectar los cables que no necesitas, mejorando la gestión de cables y el
+                                            flujo de aire en tu caso. Las PSUs semi-modulares tienen algunos cables fijos y algunos desmontables.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
+
         </div>
 
 
@@ -1226,92 +1282,164 @@ require_once __DIR__ . '/../config/conn.php';
 
 
 
-        <!-- Questions Section -->
-        <section id="faq" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
+<!-- Info Container -->
+<section class="knowledge contenedor_base" id="principiante">
+    <div class="knowledge__container container ">
+        <div class="knowledge__texts">
+            <h2 class="subtitle">¡Aprende sobre los puertos y cables traseros de una PC!</h2>
+            <p class="knowledge__paragraph">
+                Al conectar tu PC, es importante entender para qué sirve cada puerto y cable. Aquí tienes una descripción rápida de los más comunes:
+            </p>
+            <ul>
+                <li>
+                    <strong>Puerto Ethernet</strong>: Se utiliza para conectar tu computadora a Internet mediante un cable de red. 
+                    <a href="https://www.google.com/search?q=puerto+ethernet" target="_blank">¿Qué es un puerto Ethernet?</a>
+                </li>
+                <li>
+                    <strong>Puerto HDMI</strong>: Sirve para transmitir video y audio de alta definición desde tu PC a un monitor o televisor. 
+                    <a href="https://www.google.com/search?q=puerto+HDMI" target="_blank">Más sobre HDMI</a>
+                </li>
+                <li>
+                    <strong>Puerto DisplayPort</strong>: Similar al HDMI, pero diseñado especialmente para monitores con altas tasas de refresco y resolución.
+                    <a href="https://www.google.com/search?q=puerto+DisplayPort" target="_blank">Más sobre DisplayPort</a>
+                </li>
+                <li>
+                    <strong>Puertos USB</strong>: Se usan para conectar dispositivos como teclados, ratones, memorias USB, y más. Existen variaciones como USB 2.0, 3.0, y USB-C. 
+                    <a href="https://www.google.com/search?q=puertos+USB" target="_blank">Conoce más sobre los USB</a>
+                </li>
+                <li>
+                    <strong>Puerto Jack de 3.5 mm</strong>: Conecta auriculares o micrófonos a tu PC. A menudo hay diferentes colores que indican su función (verde para audio, rosa para micrófono). 
+                    <a href="https://www.google.com/search?q=puerto+jack+3.5mm" target="_blank">Detalles sobre el puerto Jack</a>
+                </li>
+                <li>
+                    <strong>Puerto VGA</strong>: Un conector más antiguo para monitores, aún presente en algunas PCs.
+                    <a href="https://www.google.com/search?q=puerto+VGA" target="_blank">¿Qué es un puerto VGA?</a>
+                </li>
+                <li>
+                    <strong>Puerto PS/2</strong>: Se utiliza para teclados y ratones antiguos. Generalmente son circulares y de color púrpura o verde.
+                    <a href="https://www.google.com/search?q=puerto+PS/2" target="_blank">Aprende sobre el puerto PS/2</a>
+                </li>
+                <li>
+                    <strong>Puerto de alimentación</strong>: Es donde conectas el cable de corriente para encender la PC.
+                    <a href="https://www.google.com/search?q=puerto+de+alimentación" target="_blank">¿Qué es un puerto de alimentación?</a>
+                </li>
+            </ul>
+            <p class="knowledge__paragraph">
+                Estos puertos y cables son fundamentales para que tu computadora funcione correctamente. Explora los enlaces para aprender más sobre cada uno.
+            </p>
+        </div>
 
-                <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="heading1">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
-                                aria-expanded="true" aria-controls="collapse1">
-                                ¿Cuánta potencia necesito?
-                            </button>
-                        </h3>
-                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Depende de los componentes de tu sistema. Las tarjetas gráficas y CPUs de alta gama requieren más energía.
-                                Usa una calculadora de potencia para obtener una estimación.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="heading2">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                ¿Qué son los rieles de 12V?
-                            </button>
-                        </h3>
-                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Los rieles de 12V suministran energía a tus componentes más importantes, como la CPU y la GPU. Las PSU de
-                                mejor calidad tienen rieles de 12V separados para una entrega de energía más estable.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="heading3">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                ¿Qué es la modulación?
-                            </button>
-                        </h3>
-                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Las PSUs modulares permiten desconectar los cables que no necesitas, mejorando la gestión de cables y el
-                                flujo de aire en tu caso. Las PSUs semi-modulares tienen algunos cables fijos y algunos desmontables.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <figure class="knowledge__picture">
+            <img src="../../public/assets/images/Rog Strix z390 e ports.png" class="knowledge__img" alt="Puertos traseros de una PC">
+        </figure>
+    </div>
+</section>
 
 
+<!-- Info Container -->
+<section class="knowledge contenedor_base" id="promedio">
+    <div class="knowledge__container container">
+        <div class="knowledge__texts">
+            <h2 class="subtitle">¡Mejora tus conocimientos sobre PCs con estos consejos!</h2>
+            <p class="knowledge__paragraph">
+                Si ya conoces lo básico, aquí tienes algunos consejos para optimizar el rendimiento de tu computadora y aprovechar mejor sus componentes:
+            </p>
+            <ul>
+                <li>
+                    <strong>Actualización de BIOS</strong>: Mantener el BIOS de tu motherboard actualizado es esencial para garantizar la compatibilidad con hardware nuevo y mejorar la estabilidad del sistema. 
+                    <a href="https://www.google.com/search?q=como+actualizar+el+BIOS+de+mi+PC" target="_blank">¿Cómo actualizar el BIOS?</a>
+                </li>
+                <li>
+                    <strong>Configuración de perfiles XMP/EXPO</strong>: Si tienes memoria RAM compatible, activa los perfiles XMP (Intel) o EXPO (AMD) desde el BIOS para que funcionen a su velocidad máxima. 
+                    <a href="https://www.google.com/search?q=como+activar+XMP+o+EXPO" target="_blank">Más sobre XMP/EXPO</a>
+                </li>
+                <li>
+                    <strong>Gestión de almacenamiento</strong>: Usa herramientas como "Optimizar unidades" en Windows para desfragmentar discos duros y garantizar un rendimiento estable. En los SSD, evita la desfragmentación y revisa su salud con software como CrystalDiskInfo. 
+                    <a href="https://www.google.com/search?q=optimizar+disco+duro+Windows" target="_blank">Aprende a optimizar tu almacenamiento</a>
+                </li>
+                <li>
+                    <strong>Control de temperaturas</strong>: Monitorea la temperatura de tu CPU y GPU con herramientas como HWMonitor o MSI Afterburner. Una buena refrigeración asegura que tu PC funcione sin problemas. 
+                    <a href="https://www.google.com/search?q=como+monitorear+temperaturas+PC" target="_blank">Guía para monitorear temperaturas</a>
+                </li>
+                <li>
+                    <strong>Overclocking básico</strong>: Experimenta con overclocking moderado en tu GPU o CPU para obtener un rendimiento extra. Utiliza herramientas como MSI Afterburner para la GPU o las opciones del BIOS para la CPU. 
+                    <a href="https://www.google.com/search?q=overclocking+para+principiantes" target="_blank">Introducción al overclocking</a>
+                </li>
+                <li>
+                    <strong>Puertos y conexiones</strong>: Asegúrate de usar cables y conexiones de alta calidad para maximizar la experiencia, como cables HDMI 2.1 para monitores 4K o DisplayPort 1.4 para tasas de refresco altas. 
+                    <a href="https://www.google.com/search?q=mejores+cables+para+monitores" target="_blank">Revisa qué cables necesitas</a>
+                </li>
+                <li>
+                    <strong>Software de mantenimiento</strong>: Limpia regularmente tu sistema de archivos temporales y programas innecesarios con herramientas como CCleaner o la limpieza de disco integrada de Windows. 
+                    <a href="https://www.google.com/search?q=limpieza+de+disco+en+Windows" target="_blank">Cómo limpiar tu PC</a>
+                </li>
+            </ul>
+            <p class="knowledge__paragraph">
+                Estos consejos te ayudarán a sacar el máximo provecho de tu PC, manteniendo un buen equilibrio entre rendimiento y estabilidad.
+            </p>
+        </div>
 
-        <!-- Info Container -->
-        <section class="knowledge">
-            <div class="knowledge__container container">
-                <div class="knowledege__texts">
-                    <h2 class="subtitle">¡Aquí aprenderás lo necesario para elegir los componentes y configuraciones
-                        al
-                        comprar una PC de escritorio!</h2>
-                    <p class="knowledge__paragraph">Te explicamos la importancia del procesador y cómo elegir el
-                        adecuado según tus necesidades. Te describimos las opciones de tarjetas gráficas para juegos
-                        y
-                        diseño, y te asesoramos sobre la cantidad de memoria RAM necesaria. Comparamos discos duros
-                        y
-                        unidades de estado sólido para que elijas el almacenamiento correcto. Te ayudamos a
-                        seleccionar
-                        una placa base compatible y una fuente de alimentación confiable. También te orientamos
-                        sobre
-                        sistemas de enfriamiento y te recomendamos periféricos esenciales como monitores, teclados y
-                        ratones. Nuestro objetivo es que tomes decisiones informadas y personalizadas para tu PC de
-                        escritorio ideal.</p>
-                    <a href="#" class="cta-2">Iniciar Sesión</a>
-                </div>
+        <figure class="knowledge__picture">
+            <img src="../../public/assets/images/expo & xmp.png" class="knowledge__img" alt="Consejos para usuarios intermedios de PC">
+        </figure>
+    </div>
+</section>
 
-                <figure class="knowledge__picture">
-                    <img src="../../public/assets/images/Pc Inside.png" class="knowledge__img">
-                </figure>
-            </div>
-        </section>
+
+<!-- Info Container -->
+<section class="knowledge contenedor_base" id="experto">
+    <div class="knowledge__container container">
+        <div class="knowledge__texts">
+            <h2 class="subtitle">Optimiza tu PC con consejos avanzados</h2>
+            <p class="knowledge__paragraph">
+                Si eres un usuario experimentado, aquí tienes algunos temas técnicos y configuraciones avanzadas para maximizar el rendimiento y la eficiencia de tu sistema:
+            </p>
+            <ul>
+                <li>
+                    <strong>Undervolting</strong>: Reduce el voltaje de tu CPU o GPU para disminuir temperaturas y consumo energético sin perder rendimiento. Utiliza herramientas como ThrottleStop o MSI Afterburner para lograrlo.
+                    <a href="https://www.google.com/search?q=undervolting+CPU+GPU" target="_blank">Guía sobre undervolting</a>
+                </li>
+                <li>
+                    <strong>RAID Configurations</strong>: Configura discos en RAID 0 para mayor velocidad o en RAID 1 para redundancia de datos. Es ideal para servidores o estaciones de trabajo de alto rendimiento.
+                    <a href="https://www.google.com/search?q=configuración+RAID+0+y+1" target="_blank">Más sobre configuraciones RAID</a>
+                </li>
+                <li>
+                    <strong>Optimización del flujo de aire</strong>: Diseña un esquema de ventilación eficiente para maximizar el enfriamiento. Usa ventiladores de presión estática para radiadores y de alto flujo para ventilación general.
+                    <a href="https://www.google.com/search?q=diseño+de+flujo+de+aire+en+PC" target="_blank">Más sobre flujo de aire</a>
+                </li>
+                <li>
+                    <strong>Perfiles avanzados de memoria</strong>: Más allá de XMP o EXPO, ajusta manualmente los timings de la RAM para lograr una latencia más baja y un mejor rendimiento en tareas críticas.
+                    <a href="https://www.google.com/search?q=ajustar+timings+RAM+manualmente" target="_blank">Ajustes avanzados de RAM</a>
+                </li>
+                <li>
+                    <strong>Overclocking extremo</strong>: Experimenta con refrigeración líquida customizada o incluso enfriamiento por nitrógeno para llevar tu CPU/GPU a sus límites. Utiliza benchmarks como Cinebench o 3DMark para validar la estabilidad.
+                    <a href="https://www.google.com/search?q=overclocking+extremo" target="_blank">Guía sobre overclocking extremo</a>
+                </li>
+                <li>
+                    <strong>Gestión avanzada de energía</strong>: Configura opciones de ahorro energético en la BIOS o desde el sistema operativo para equilibrar rendimiento y eficiencia en estaciones de trabajo.
+                    <a href="https://www.google.com/search?q=configuración+avanzada+de+energía+en+PC" target="_blank">Optimiza el consumo de energía</a>
+                </li>
+                <li>
+                    <strong>Creación de máquinas virtuales</strong>: Usa software como VMware Workstation o VirtualBox para ejecutar múltiples sistemas operativos en tu PC. Es ideal para pruebas de software o simulaciones.
+                    <a href="https://www.google.com/search?q=crear+máquinas+virtuales+en+PC" target="_blank">Aprende sobre máquinas virtuales</a>
+                </li>
+                <li>
+                    <strong>Configuraciones de red avanzadas</strong>: Configura VLANs, Quality of Service (QoS), y un servidor NAS para optimizar el rendimiento de tu red local y compartir recursos entre dispositivos.
+                    <a href="https://www.google.com/search?q=QoS+y+configuración+de+VLANs" target="_blank">Configura tu red avanzada</a>
+                </li>
+            </ul>
+            <p class="knowledge__paragraph">
+                Estas configuraciones y ajustes avanzados te ayudarán a aprovechar al máximo tu hardware y personalizar tu sistema para tareas específicas de alto rendimiento.
+            </p>
+        </div>
+
+        <figure class="knowledge__picture">
+            <img src="../../public/assets/images/overclock.png" class="knowledge__img" alt="Consejos técnicos avanzados para PC">
+        </figure>
+    </div>
+</section>
+
+
 
 
 
@@ -1545,7 +1673,7 @@ require_once __DIR__ . '/../config/conn.php';
             <div class="footer__divider"></div>
             <p class="footer__copyright">
                 © <span id="currentYear"></span> TechAssist - Todos los derechos reservados | Diseñado por Angel Jesús Romero
-                Pérez, Luis Angel Martinez Ponce de Leon, .
+                Pérez, Luis Angel Martinez Ponce de Leon, Osvaldo Yamil Juárez Reyes, Gustavo Castañeda Peña & Iker Gael Torres Hernandez .
             </p>
         </div>
     </footer>
