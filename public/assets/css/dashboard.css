@@ -5,6 +5,24 @@
   display: none;
 }
 
+
+.card-title.intermediate{
+  color: #ff8960 !important;
+}
+
+.card-text.intermediate{
+  color: var(--blue) !important;
+}
+
+.card-title.expert{
+color: #ce0000 !important;
+}
+
+.card-text.expert{
+  color: var(--orange) !important;
+}
+
+
 .PcMenu.show {
   display: block;
   animation: fadeInUp 1s ease 0.2s backwards;
@@ -1274,3 +1292,142 @@
   }
 }
 
+@keyframes containerAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes containerDisappear {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+}
+
+.containerDinamico {
+  position: relative;
+  margin: 60px auto;
+  padding: 60px 20px 20px;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  animation: containerAppear 0.5s ease forwards;
+}
+
+.containerDinamico.hiding {
+  animation: containerDisappear 0.5s ease forwards;
+}
+
+.dynamic-card {
+  position: relative;
+  width: 300px;
+  margin: -80px auto 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+}
+
+.dynamic-card .card {
+  transform: scale(0.85);
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease;
+}
+
+.dynamic-card:hover .card {
+  transform: scale(0.9);
+}
+
+.dynamic-card:hover ~ .content-container {
+  transform: scale(1.02);
+}
+
+.content-container {
+  width: 95%;
+  max-width: 1100px;
+  padding: 20px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.inner-container {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  animation: containerAppear 0.5s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.inner-container:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.inner-container:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Resto del CSS igual... */
+
+.containerDinamico h2 {
+  margin: 20px 0;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.containerDinamico p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.containerDinamico + .containerDinamico {
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .containerDinamico {
+    margin: 50px auto;
+    padding: 40px 15px 15px;
+  }
+  
+  .dynamic-card {
+    width: 260px;
+    margin: -60px auto 20px;
+  }
+  
+  .dynamic-card .card {
+    transform: scale(0.8);
+  }
+  
+  .content-container {
+    padding: 15px;
+  }
+  
+  .inner-container {
+    padding: 15px;
+    margin: 15px 0;
+  }
+}

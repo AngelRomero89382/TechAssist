@@ -1,16 +1,5 @@
-/*
- * TechAssist - Sistema de Aprendizaje Interactivo
- * Copyright (c) 2024 TechAssist
- * Autor: Angel Jesús Romero Pérez
- * 
- * Este archivo es parte de TechAssist y está protegido por derechos de autor.
- * Uso no autorizado de este código está prohibido.
- */
-
-
 let userNivel
 let nivelContainer = document.getElementById('userLevel')
-let nivelActual = nivelContainer.textContent
 
 const getNivel = async () => {
   try {
@@ -32,100 +21,95 @@ const handleNivel = () => {
 
   const nivel = niveles[userNivel]
 
+  // Caso 1: Elementos con clase base
+  const imgsClase = document.querySelectorAll('.img_base') 
+  const textosClase = document.querySelectorAll('.texto_base')
+  const contsClase = document.querySelectorAll('.contenedor_base')
+
+  // Caso 2: Elementos con ID base
+  const imgsId = document.querySelectorAll('#img_base') 
+  const textosId = document.querySelectorAll('#texto_base')
+  const contsId = document.querySelectorAll('#cont_base')
+
+  // Ocultar todo primero
+  imgsClase.forEach(img => img.style.display = 'none')
+  textosClase.forEach(texto => texto.style.display = 'none')
+  contsClase.forEach(cont => cont.style.display = 'none')
+  
+  imgsId.forEach(img => img.style.display = 'none')
+  textosId.forEach(texto => texto.style.display = 'none')
+  contsId.forEach(cont => cont.style.display = 'none')
+
   switch(nivel) {
     case 'principiante':
-      // Textos
-      let textos = document.querySelectorAll('.txt')
-      textos.forEach(txt => txt.classList.add('txt_' + nivel))
-      
-      // Contenedores
-      let boxes = document.querySelectorAll('.box') 
-      boxes.forEach(box => {
-        if(box.id.includes('box_' + nivel) || box.classList.contains('nivel_' + nivel)) {
-          box.style.display = 'block'
-        } else {
-          box.style.display = 'none' 
-        }
-      })
-
-      // Imágenes por ID
-      let imgs = document.querySelectorAll('.img')
-      imgs.forEach(img => {
-        if(img.id.includes('img_' + nivel)) {
-          img.src = '../../public/assets/images/principiante/' + img.dataset.img
-        }
-      })
-
-      // Imágenes con ID existente
-      let imgsClase = document.querySelectorAll('.img')
+      // Caso 1: Checar IDs de nivel
       imgsClase.forEach(img => {
-        if(img.classList.contains('nivel_' + nivel)) {
-          img.src = '../../public/assets/images/principiante/' + img.dataset.img
-        }
+        if(img.id.includes('principiante')) img.style.display = 'block'
+      })
+      textosClase.forEach(texto => {
+        if(texto.id.includes('principiante')) texto.style.display = 'block'
+      })
+      contsClase.forEach(cont => {
+        if(cont.id.includes('principiante')) cont.style.display = 'block'
+      })
+
+      // Caso 2: Checar clases de nivel
+      imgsId.forEach(img => {
+        if(img.classList.contains('nivel_principiante')) img.style.display = 'block'
+      })
+      textosId.forEach(texto => {
+        if(texto.classList.contains('nivel_principiante')) texto.style.display = 'block'
+      })
+      contsId.forEach(cont => {
+        if(cont.classList.contains('nivel_principiante')) cont.style.display = 'block'
       })
       break
 
     case 'promedio':
-      // Textos
-      let textosMed = document.querySelectorAll('.txt')
-      textosMed.forEach(txt => txt.classList.add('txt_' + nivel))
-      
-      // Contenedores  
-      let boxesMed = document.querySelectorAll('.box')
-      boxesMed.forEach(box => {
-        if(box.id.includes('box_' + nivel) || box.classList.contains('nivel_' + nivel)) {
-          box.style.display = 'flex'
-        } else {
-          box.style.display = 'none'
-        }
+      // Caso 1: Checar IDs de nivel
+      imgsClase.forEach(img => {
+        if(img.id.includes('promedio')) img.style.display = 'block'
+      })
+      textosClase.forEach(texto => {
+        if(texto.id.includes('promedio')) texto.style.display = 'block'
+      })
+      contsClase.forEach(cont => {
+        if(cont.id.includes('promedio')) cont.style.display = 'block'
       })
 
-      // Imágenes por ID
-      let imgsMed = document.querySelectorAll('.img') 
-      imgsMed.forEach(img => {
-        if(img.id.includes('img_' + nivel)) {
-          img.src = '../../public/assets/images/promedio/' + img.dataset.img  
-        }
+      // Caso 2: Checar clases de nivel
+      imgsId.forEach(img => {
+        if(img.classList.contains('nivel_promedio')) img.style.display = 'block'
       })
-
-      // Imágenes con ID existente
-      let imgsMedClase = document.querySelectorAll('.img')
-      imgsMedClase.forEach(img => {
-        if(img.classList.contains('nivel_' + nivel)) {
-          img.src = '../../public/assets/images/promedio/' + img.dataset.img
-        }
+      textosId.forEach(texto => {
+        if(texto.classList.contains('nivel_promedio')) texto.style.display = 'block'
+      })
+      contsId.forEach(cont => {
+        if(cont.classList.contains('nivel_promedio')) cont.style.display = 'block'
       })
       break
 
     case 'experto':
-      // Textos
-      let textosPro = document.querySelectorAll('.txt')
-      textosPro.forEach(txt => txt.classList.add('txt_' + nivel))
-
-      // Contenedores
-      let boxesPro = document.querySelectorAll('.box')
-      boxesPro.forEach(box => {
-        if(box.id.includes('box_' + nivel) || box.classList.contains('nivel_' + nivel)) {
-          box.style.display = 'grid'
-        } else {
-          box.style.display = 'none'
-        }
+      // Caso 1: Checar IDs de nivel
+      imgsClase.forEach(img => {
+        if(img.id.includes('experto')) img.style.display = 'block'
+      })
+      textosClase.forEach(texto => {
+        if(texto.id.includes('experto')) texto.style.display = 'block'
+      })
+      contsClase.forEach(cont => {
+        if(cont.id.includes('experto')) cont.style.display = 'block'
       })
 
-      // Imágenes por ID
-      let imgsPro = document.querySelectorAll('.img')
-      imgsPro.forEach(img => {
-        if(img.id.includes('img_' + nivel)) {
-          img.src = '../../public/assets/images/experto/' + img.dataset.img
-        }
+      // Caso 2: Checar clases de nivel
+      imgsId.forEach(img => {
+        if(img.classList.contains('nivel_experto')) img.style.display = 'block'
       })
-
-      // Imágenes con ID existente
-      let imgsProClase = document.querySelectorAll('.img')
-      imgsProClase.forEach(img => {
-        if(img.classList.contains('nivel_' + nivel)) {
-          img.src = '../../public/assets/images/experto/' + img.dataset.img
-        }
+      textosId.forEach(texto => {
+        if(texto.classList.contains('nivel_experto')) texto.style.display = 'block'
+      })
+      contsId.forEach(cont => {
+        if(cont.classList.contains('nivel_experto')) cont.style.display = 'block'
       })
       break
   }
