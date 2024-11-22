@@ -154,8 +154,8 @@ require_once __DIR__ . '/../config/conn.php';
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/Rizen 7 5700x.png" class="card-img-top size-img" alt="Procesador">
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/Rizen 7 5700x.png" onclick="showCPUContainer(this)" class="card-img-top size-img" alt="Procesador">
                         <div class="card-body">
                             <h5 class="card-title intermediate">Procesador - Intermediate</h5>
                             <p class="card-text intermediate" id="option-processor">Es un componente clave que ejecuta instrucciones, asegúrate de monitorear su temperatura para evitar sobrecalentamientos.</p>
@@ -163,7 +163,7 @@ require_once __DIR__ . '/../config/conn.php';
                     </div>
 
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/Rizen 7 5700x.png" class="card-img-top size-img" alt="Procesador">
+                        <img src="../../public/assets/images/Rizen 7 5700x.png" onclick="showCPUContainer(this)" class="card-img-top size-img" alt="Procesador">
                         <div class="card-body">
                             <h5 class="card-title expert">Procesador - Expert</h5>
                             <p class="card-text expert" id="option-processor">Realiza overclocking seguro para maximizar el rendimiento, monitoreando las frecuencias y voltajes.</p>
@@ -172,241 +172,323 @@ require_once __DIR__ . '/../config/conn.php';
 
 
                     <!-- RAM -->
+                    <!-- Principiante -->
                     <div class="card contenedor_base" id="principiante">
-                        <img src="../../public/assets/images/Corsair Dominator Platinum.webp" class="card-img-top size-img" alt="Memoria RAM">
+                        <img src="../../public/assets/images/Corsair Dominator Platinum.webp" onclick="showRAMContainer(this)" class="card-img-top size-img" alt="Memoria RAM">
                         <div class="card-body">
                             <h5 class="card-title beginner">Memoria RAM - Beginner</h5>
-                            <p class="card-text beginner" id="option-RAM">La memoria RAM es la memoria que la computadora usa para trabajar más rápido.</p>
+                            <p class="card-text beginner" id="option-RAM">
+                                La memoria RAM es la memoria que la computadora usa para trabajar más rápido.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/Corsair Dominator Platinum.webp" class="card-img-top size-img" alt="Memoria RAM">
+                    <!-- Promedio -->
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/Corsair Dominator Platinum.webp" onclick="showRAMContainer(this)" class="card-img-top size-img" alt="Memoria RAM">
                         <div class="card-body">
                             <h5 class="card-title intermediate">Memoria RAM - Intermediate</h5>
-                            <p class="card-text intermediate" id="option-RAM">Monitorea el uso de memoria para asegurarte de que tu sistema tiene suficiente capacidad disponible.</p>
+                            <p class="card-text intermediate" id="option-RAM">
+                                Monitorea el uso de memoria para asegurarte de que tu sistema tiene suficiente capacidad disponible.
+                            </p>
                         </div>
                     </div>
 
+                    <!-- Experto -->
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/Corsair Dominator Platinum.webp" class="card-img-top size-img" alt="Memoria RAM">
+                        <img src="../../public/assets/images/Corsair Dominator Platinum.webp" onclick="showRAMContainer(this)" class="card-img-top size-img" alt="Memoria RAM">
                         <div class="card-body">
                             <h5 class="card-title expert">Memoria RAM - Expert</h5>
-                            <p class="card-text expert" id="option-RAM">Configura perfiles avanzados como XMP/EXPO para optimizar su rendimiento.</p>
+                            <p class="card-text expert" id="option-RAM">
+                                Configura perfiles avanzados como XMP/EXPO para optimizar su rendimiento.
+                            </p>
                         </div>
                     </div>
 
 
                     <!-- Motherboard -->
+                    <!-- Principiante -->
                     <div class="card contenedor_base" id="principiante">
-                        <img src="../../public/assets/images/Rog Strix B550-f Wifi 2.jpg" class="card-img-top size-img" alt="Tarjeta Madre">
+                        <img src="../../public/assets/images/Rog Strix B550-f Wifi 2.jpg" onclick="showMotherboardContainer(this)" class="card-img-top size-img" alt="Tarjeta Madre">
                         <div class="card-body">
                             <h5 class="card-title beginner">Tarjeta Madre - Beginner</h5>
-                            <p class="card-text beginner" id="option-motherboard">La tarjeta madre es donde se conectan todos los componentes para que funcionen.</p>
+                            <p class="card-text beginner" id="option-motherboard">
+                                La tarjeta madre es donde se conectan todos los componentes para que funcionen.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/Rog Strix B550-f Wifi 2.jpg" class="card-img-top size-img" alt="Tarjeta Madre">
+                    <!-- Promedio -->
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/Rog Strix B550-f Wifi 2.jpg" onclick="showMotherboardContainer(this)" class="card-img-top size-img" alt="Tarjeta Madre">
                         <div class="card-body">
                             <h5 class="card-title intermediate">Tarjeta Madre - Intermediate</h5>
-                            <p class="card-text intermediate" id="option-motherboard">Asegúrate de actualizar el BIOS regularmente para mantener la compatibilidad con componentes nuevos.</p>
+                            <p class="card-text intermediate" id="option-motherboard">
+                                Asegúrate de actualizar el BIOS regularmente para mantener la compatibilidad con componentes nuevos.
+                            </p>
                         </div>
                     </div>
 
+                    <!-- Experto -->
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/Rog Strix B550-f Wifi 2.jpg" class="card-img-top size-img" alt="Tarjeta Madre">
+                        <img src="../../public/assets/images/Rog Strix B550-f Wifi 2.jpg" onclick="showMotherboardContainer(this)" class="card-img-top size-img" alt="Tarjeta Madre">
                         <div class="card-body">
                             <h5 class="card-title expert">Tarjeta Madre - Expert</h5>
-                            <p class="card-text expert" id="option-motherboard">Optimiza la configuración del BIOS para un rendimiento máximo en sistemas avanzados.</p>
+                            <p class="card-text expert" id="option-motherboard">
+                                Optimiza la configuración del BIOS para un rendimiento máximo en sistemas avanzados.
+                            </p>
                         </div>
                     </div>
 
 
                     <!-- Case -->
+                    <!-- Principiante -->
                     <div class="card contenedor_base" id="principiante">
-                        <img src="../../public/assets/images/H9 Elite NZXT.png" class="card-img-top size-img" alt="Gabinete">
+                        <img src="../../public/assets/images/H9 Elite NZXT.png" onclick="showCaseContainer(this)" class="card-img-top size-img" alt="Gabinete">
                         <div class="card-body">
                             <h5 class="card-title beginner">Gabinete - Beginner</h5>
-                            <p class="card-text beginner" id="option-case">El gabinete es la caja que protege las partes de la computadora.</p>
+                            <p class="card-text beginner" id="option-case">
+                                El gabinete es la caja que protege las partes de la computadora.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/H9 Elite NZXT.png" class="card-img-top size-img" alt="Gabinete">
+                    <!-- Promedio -->
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/H9 Elite NZXT.png" onclick="showCaseContainer(this)" class="card-img-top size-img" alt="Gabinete">
                         <div class="card-body">
                             <h5 class="card-title intermediate">Gabinete - Intermediate</h5>
-                            <p class="card-text intermediate" id="option-case">Mantén una gestión de cables ordenada para mejorar el flujo de aire interno.</p>
+                            <p class="card-text intermediate" id="option-case">
+                                Mantén una gestión de cables ordenada para mejorar el flujo de aire interno.
+                            </p>
                         </div>
                     </div>
 
+                    <!-- Experto -->
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/H9 Elite NZXT.png" class="card-img-top size-img" alt="Gabinete">
+                        <img src="../../public/assets/images/H9 Elite NZXT.png" onclick="showCaseContainer(this)" class="card-img-top size-img" alt="Gabinete">
                         <div class="card-body">
                             <h5 class="card-title expert">Gabinete - Expert</h5>
-                            <p class="card-text expert" id="option-case">Optimiza el flujo de aire con configuraciones avanzadas de ventiladores y sistemas de refrigeración líquida.</p>
+                            <p class="card-text expert" id="option-case">
+                                Optimiza el flujo de aire con configuraciones avanzadas de ventiladores y sistemas de refrigeración líquida.
+                            </p>
                         </div>
                     </div>
 
 
                     <!-- PSU -->
+                    <!-- Principiante -->
                     <div class="card contenedor_base" id="principiante">
-                        <img src="../../public/assets/images/Corsair RM750e.avif" class="card-img-top size-img" alt="Fuente De Poder">
+                        <img src="../../public/assets/images/Corsair RM750e.avif" onclick="showPSUContainer(this)" class="card-img-top size-img" alt="Fuente De Poder">
                         <div class="card-body">
                             <h5 class="card-title beginner">Fuente De Poder - Beginner</h5>
-                            <p class="card-text beginner" id="option-powerSource">La fuente de poder da energía a todas las partes de la computadora.</p>
+                            <p class="card-text beginner" id="option-powerSource">
+                                La fuente de poder da energía a todas las partes de la computadora.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/Corsair RM750e.avif" class="card-img-top size-img" alt="Fuente De Poder">
+                    <!-- Promedio -->
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/Corsair RM750e.avif" onclick="showPSUContainer(this)" class="card-img-top size-img" alt="Fuente De Poder">
                         <div class="card-body">
                             <h5 class="card-title intermediate">Fuente De Poder - Intermediate</h5>
-                            <p class="card-text intermediate" id="option-powerSource">Asegúrate de que la fuente de poder tenga suficiente capacidad para todos tus componentes y mantén sus cables organizados.</p>
+                            <p class="card-text intermediate" id="option-powerSource">
+                                Asegúrate de que la fuente de poder tenga suficiente capacidad para todos tus componentes y mantén sus cables organizados.
+                            </p>
                         </div>
                     </div>
 
+                    <!-- Experto -->
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/Corsair RM750e.avif" class="card-img-top size-img" alt="Fuente De Poder">
+                        <img src="../../public/assets/images/Corsair RM750e.avif" onclick="showPSUContainer(this)" class="card-img-top size-img" alt="Fuente De Poder">
                         <div class="card-body">
                             <h5 class="card-title expert">Fuente De Poder - Expert</h5>
-                            <p class="card-text expert" id="option-powerSource">Selecciona una fuente modular de alta eficiencia (80 Plus Gold o superior) y verifica la calidad de sus conectores PCIe.</p>
+                            <p class="card-text expert" id="option-powerSource">
+                                Selecciona una fuente modular de alta eficiencia (80 Plus Gold o superior) y verifica la calidad de sus conectores PCIe.
+                            </p>
                         </div>
                     </div>
 
 
                     <!-- Cooler -->
+                    <!-- Principiante -->
                     <div class="card contenedor_base" id="principiante">
-                        <img src="../../public/assets/images/kraken 240mm z53.webp" class="card-img-top size-img" alt="Enfriamiento De La CPU">
+                        <img src="../../public/assets/images/kraken 240mm z53.webp" onclick="showCoolerContainer(this)" class="card-img-top size-img" alt="Enfriamiento De La CPU">
                         <div class="card-body">
                             <h5 class="card-title beginner">Enfriamiento De La CPU - Beginner</h5>
-                            <p class="card-text beginner" id="option-cooler">Mantiene el procesador a una temperatura adecuada.</p>
+                            <p class="card-text beginner" id="option-cooler">
+                                Mantiene el procesador a una temperatura adecuada.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/kraken 240mm z53.webp" class="card-img-top size-img" alt="Enfriamiento De La CPU">
+                    <!-- Promedio -->
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/kraken 240mm z53.webp" onclick="showCoolerContainer(this)" class="card-img-top size-img" alt="Enfriamiento De La CPU">
                         <div class="card-body">
                             <h5 class="card-title intermediate">Enfriamiento De La CPU - Intermediate</h5>
-                            <p class="card-text intermediate" id="option-cooler">Revisa la limpieza de los ventiladores y el radiador regularmente para evitar obstrucciones.</p>
+                            <p class="card-text intermediate" id="option-cooler">
+                                Revisa la limpieza de los ventiladores y el radiador regularmente para evitar obstrucciones.
+                            </p>
                         </div>
                     </div>
 
+                    <!-- Experto -->
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/kraken 240mm z53.webp" class="card-img-top size-img" alt="Enfriamiento De La CPU">
+                        <img src="../../public/assets/images/kraken 240mm z53.webp" onclick="showCoolerContainer(this)" class="card-img-top size-img" alt="Enfriamiento De La CPU">
                         <div class="card-body">
                             <h5 class="card-title expert">Enfriamiento De La CPU - Expert</h5>
-                            <p class="card-text expert" id="option-cooler">Configura perfiles de velocidad en el software del cooler y verifica la posición correcta de la bomba para sistemas de refrigeración líquida.</p>
+                            <p class="card-text expert" id="option-cooler">
+                                Configura perfiles de velocidad en el software del cooler y verifica la posición correcta de la bomba para sistemas de refrigeración líquida.
+                            </p>
                         </div>
                     </div>
 
                     <!-- GPU -->
+                    <!-- Principiante -->
                     <div class="card contenedor_base" id="principiante">
-                        <img src="../../public/assets/images/rx 6750xt.jfif" class="card-img-top size-img" alt="Tarjeta Gráfica">
+                        <img src="../../public/assets/images/rx 6750xt.jfif" onclick="showGPUContainer(this)" class="card-img-top size-img" alt="Tarjeta Gráfica">
                         <div class="card-body">
                             <h5 class="card-title beginner">Tarjeta Gráfica - Beginner</h5>
-                            <p class="card-text beginner" id="option-graphicCard">Se encarga de mostrar imágenes detalladas en la pantalla.</p>
+                            <p class="card-text beginner" id="option-graphicCard">
+                                Se encarga de mostrar imágenes detalladas en la pantalla.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/rx 6750xt.jfif" class="card-img-top size-img" alt="Tarjeta Gráfica">
+                    <!-- Promedio -->
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/rx 6750xt.jfif" onclick="showGPUContainer(this)" class="card-img-top size-img" alt="Tarjeta Gráfica">
                         <div class="card-body">
                             <h5 class="card-title intermediate">Tarjeta Gráfica - Intermediate</h5>
-                            <p class="card-text intermediate" id="option-graphicCard">Mantén los drivers actualizados para garantizar el mejor rendimiento en los juegos y aplicaciones.</p>
+                            <p class="card-text intermediate" id="option-graphicCard">
+                                Mantén los drivers actualizados para garantizar el mejor rendimiento en los juegos y aplicaciones.
+                            </p>
                         </div>
                     </div>
 
+                    <!-- Experto -->
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/rx 6750xt.jfif" class="card-img-top size-img" alt="Tarjeta Gráfica">
+                        <img src="../../public/assets/images/rx 6750xt.jfif" onclick="showGPUContainer(this)" class="card-img-top size-img" alt="Tarjeta Gráfica">
                         <div class="card-body">
                             <h5 class="card-title expert">Tarjeta Gráfica - Expert</h5>
-                            <p class="card-text expert" id="option-graphicCard">Realiza ajustes en las configuraciones de overclock y control térmico para maximizar el rendimiento.</p>
+                            <p class="card-text expert" id="option-graphicCard">
+                                Realiza ajustes en las configuraciones de overclock y control térmico para maximizar el rendimiento.
+                            </p>
                         </div>
                     </div>
 
 
                     <!-- SSD -->
+                    <!-- Principiante -->
                     <div class="card contenedor_base" id="principiante">
-                        <img src="../../public/assets/images/SSD-Crucial-T500-NVMe-2TB.webp" class="card-img-top size-img" alt="Disco Duro">
+                        <img src="../../public/assets/images/SSD-Crucial-T500-NVMe-2TB.webp" onclick="showStorageContainer(this)" class="card-img-top size-img" alt="Disco Duro">
                         <div class="card-body">
                             <h5 class="card-title beginner">Disco Duro - Beginner</h5>
-                            <p class="card-text beginner" id="option-drive">Es donde se guarda todo, los archivos y programas de forma permanente.</p>
+                            <p class="card-text beginner" id="option-drive">
+                                Es donde se guarda todo, los archivos y programas de forma permanente.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/SSD-Crucial-T500-NVMe-2TB.webp" class="card-img-top size-img" alt="Disco Duro">
+                    <!-- Promedio -->
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/SSD-Crucial-T500-NVMe-2TB.webp" onclick="showStorageContainer(this)" class="card-img-top size-img" alt="Disco Duro">
                         <div class="card-body">
                             <h5 class="card-title intermediate">Disco Duro - Intermediate</h5>
-                            <p class="card-text intermediate" id="option-drive">Verifica regularmente el estado de salud del disco utilizando software especializado.</p>
+                            <p class="card-text intermediate" id="option-drive">
+                                Verifica regularmente el estado de salud del disco utilizando software especializado.
+                            </p>
                         </div>
                     </div>
 
+                    <!-- Experto -->
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/SSD-Crucial-T500-NVMe-2TB.webp" class="card-img-top size-img" alt="Disco Duro">
+                        <img src="../../public/assets/images/SSD-Crucial-T500-NVMe-2TB.webp" onclick="showStorageContainer(this)" class="card-img-top size-img" alt="Disco Duro">
                         <div class="card-body">
                             <h5 class="card-title expert">Disco Duro - Expert</h5>
-                            <p class="card-text expert" id="option-drive">Configura discos en RAID para mejorar velocidad o redundancia, y optimiza el sistema de archivos.</p>
+                            <p class="card-text expert" id="option-drive">
+                                Configura discos en RAID para mejorar velocidad o redundancia, y optimiza el sistema de archivos.
+                            </p>
                         </div>
                     </div>
 
 
                     <!-- Pasta Térmica -->
+                    <!-- Principiante -->
                     <div class="card contenedor_base" id="principiante">
-                        <img src="../../public/assets/images/Artic MX-4.png" onclick="a()" class="card-img-top size-img" alt="Pasta Térmica">
+                        <img src="../../public/assets/images/Artic MX-4.png" onclick="showThermalPasteContainer(this)" class="card-img-top size-img" alt="Pasta Térmica">
                         <div class="card-body">
                             <h5 class="card-title beginner">Pasta Térmica - Beginner</h5>
-                            <p class="card-text beginner" id="option-thermalPaste">Es una sustancia que se coloca entre el procesador y el enfriamiento para evitar que se caliente demasiado.</p>
+                            <p class="card-text beginner" id="option-thermalPaste">
+                                Es una sustancia que se coloca entre el procesador y el enfriamiento para evitar que se caliente demasiado.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/Artic MX-4.png" onclick="a()" class="card-img-top size-img" alt="Pasta Térmica">
+                    <!-- Promedio -->
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/Artic MX-4.png" onclick="showThermalPasteContainer(this)" class="card-img-top size-img" alt="Pasta Térmica">
                         <div class="card-body">
                             <h5 class="card-title intermediate">Pasta Térmica - Intermediate</h5>
-                            <p class="card-text intermediate" id="option-thermalPaste">Asegúrate de cambiar la pasta térmica cada 1-2 años para mantener un buen rendimiento térmico.</p>
+                            <p class="card-text intermediate" id="option-thermalPaste">
+                                Asegúrate de cambiar la pasta térmica cada 1-2 años para mantener un buen rendimiento térmico.
+                            </p>
                         </div>
                     </div>
 
+                    <!-- Experto -->
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/Artic MX-4.png" onclick="a()" class="card-img-top size-img" alt="Pasta Térmica">
+                        <img src="../../public/assets/images/Artic MX-4.png" onclick="showThermalPasteContainer(this)" class="card-img-top size-img" alt="Pasta Térmica">
                         <div class="card-body">
                             <h5 class="card-title expert">Pasta Térmica - Expert</h5>
-                            <p class="card-text expert" id="option-thermalPaste">Utiliza pastas térmicas de alto rendimiento y aplica de manera uniforme para maximizar la disipación de calor.</p>
+                            <p class="card-text expert" id="option-thermalPaste">
+                                Utiliza pastas térmicas de alto rendimiento y aplica de manera uniforme para maximizar la disipación de calor.
+                            </p>
                         </div>
                     </div>
 
 
                     <!-- Accesorios -->
+                    <!-- Principiante -->
                     <div class="card contenedor_base" id="principiante">
-                        <img src="../../public/assets/images/Gigabyte G24F 2.png" class="card-img-top size-img" alt="Accesorios">
+                        <img src="../../public/assets/images/Gigabyte G24F 2.png" onclick="showAccessoriesContainer(this)" class="card-img-top size-img" alt="Accesorios">
                         <div class="card-body">
                             <h5 class="card-title beginner">Accesorios - Beginner</h5>
-                            <p class="card-text beginner" id="option-accessories">Los accesorios de una PC añaden funciones: monitor (pantalla), teclado, ratón, altavoces, y cámara web.</p>
+                            <p class="card-text beginner" id="option-accessories">
+                                Los accesorios de una PC añaden funciones: monitor (pantalla), teclado, ratón, altavoces, y cámara web.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/Gigabyte G24F 2.png" class="card-img-top size-img" alt="Accesorios">
+                    <!-- Promedio -->
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/Gigabyte G24F 2.png" onclick="showAccessoriesContainer(this)" class="card-img-top size-img" alt="Accesorios">
                         <div class="card-body">
                             <h5 class="card-title intermediate">Accesorios - Intermediate</h5>
-                            <p class="card-text intermediate" id="option-accessories">Invierte en accesorios de buena calidad, como un monitor con alta frecuencia de actualización y un teclado mecánico.</p>
+                            <p class="card-text intermediate" id="option-accessories">
+                                Invierte en accesorios de buena calidad, como un monitor con alta frecuencia de actualización y un teclado mecánico.
+                            </p>
                         </div>
                     </div>
 
+                    <!-- Experto -->
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/Gigabyte G24F 2.png" class="card-img-top size-img" alt="Accesorios">
+                        <img src="../../public/assets/images/Gigabyte G24F 2.png" onclick="showAccessoriesContainer(this)" class="card-img-top size-img" alt="Accesorios">
                         <div class="card-body">
                             <h5 class="card-title expert">Accesorios - Expert</h5>
-                            <p class="card-text expert" id="option-accessories">Configura periféricos avanzados, como un monitor dual y sistemas de sonido envolvente para experiencias inmersivas.</p>
+                            <p class="card-text expert" id="option-accessories">
+                                Configura periféricos avanzados, como un monitor dual y sistemas de sonido envolvente para experiencias inmersivas.
+                            </p>
                         </div>
                     </div>
 
 
                     <!-- Recomendaciones -->
+                    <!-- Principiante -->
                     <div class="card contenedor_base" id="principiante">
-                        <img src="../../public/assets/images/Pc-Recomendadas.webp" class="card-img-top size-img" alt="Recomendaciones">
+                        <img src="../../public/assets/images/Pc-Recomendadas.webp" onclick="showRecommendationsContainer(this)" class="card-img-top size-img" alt="Recomendaciones">
                         <div class="card-body">
                             <h5 class="card-title beginner">Recomendaciones - Beginner</h5>
                             <p class="card-text beginner" id="option-recommendation">
@@ -415,8 +497,9 @@ require_once __DIR__ . '/../config/conn.php';
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/Pc-Recomendadas.webp" class="card-img-top size-img" alt="Recomendaciones">
+                    <!-- Promedio -->
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/Pc-Recomendadas.webp" onclick="showRecommendationsContainer(this)" class="card-img-top size-img" alt="Recomendaciones">
                         <div class="card-body">
                             <h5 class="card-title intermediate">Recomendaciones - Intermediate</h5>
                             <p class="card-text intermediate" id="option-recommendation">
@@ -425,8 +508,9 @@ require_once __DIR__ . '/../config/conn.php';
                         </div>
                     </div>
 
+                    <!-- Experto -->
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/Pc-Recomendadas.webp" class="card-img-top size-img" alt="Recomendaciones">
+                        <img src="../../public/assets/images/Pc-Recomendadas.webp" onclick="showRecommendationsContainer(this)" class="card-img-top size-img" alt="Recomendaciones">
                         <div class="card-body">
                             <h5 class="card-title expert">Recomendaciones - Expert</h5>
                             <p class="card-text expert" id="option-recommendation">
@@ -437,30 +521,34 @@ require_once __DIR__ . '/../config/conn.php';
 
 
                     <!-- Cuidados -->
+
+                    <!-- Principiante -->
                     <div class="card contenedor_base" id="principiante">
-                        <img src="../../public/assets/images/Pc-CuidadosPrincipiante.png" class="card-img-top size-img " alt="Cuidados Principiante">
+                        <img src="../../public/assets/images/Pc-CuidadosPrincipiante.png" onclick="showCuidadosContainer(this)" class="card-img-top size-img" alt="Cuidados Principiante">
                         <div class="card-body">
-                            <h5 class="card-title">Cuidados</h5>
-                            <p class="card-text">
+                            <h5 class="card-title beginner">Cuidados - Beginner</h5>
+                            <p class="card-text beginner">
                                 Son tareas simples como tener tu computadora en un lugar fresco, evitar infectar tu computadora de un virus, apagar correctamente la PC que significa cada cable de tu PC.
                             </p>
                         </div>
                     </div>
 
-                    <div class="card contenedor_base">
-                        <img src="../../public/assets/images/Pc-CuidadosPromedio.avif" class="card-img-top size-img " alt="Cuidados Promedio">
+                    <!-- Promedio -->
+                    <div class="card contenedor_base" id="promedio">
+                        <img src="../../public/assets/images/Pc-CuidadosPromedio.avif" onclick="showCuidadosContainer(this)" class="card-img-top size-img" alt="Cuidados Promedio">
                         <div class="card-body">
-                            <h5 class="card-title intermediate">Cuidados</h5>
+                            <h5 class="card-title intermediate">Cuidados - Intermediate</h5>
                             <p class="card-text intermediate">
                                 Limpieza interna y externa, monitoreo de temperaturas, flujo de aire, actualización de drivers y cambio de pasta térmica.
                             </p>
                         </div>
                     </div>
 
+                    <!-- Experto -->
                     <div class="card contenedor_base" id="experto">
-                        <img src="../../public/assets/images/Pc-CuidadosExperto.webp" class="card-img-top size-img" alt="Cuidados Experto" onclick="showCuidadosContainer(this)">
+                        <img src="../../public/assets/images/Pc-CuidadosExperto.webp" onclick="showCuidadosContainer(this)" class="card-img-top size-img" alt="Cuidados Experto">
                         <div class="card-body">
-                            <h5 class="card-title expert">Cuidados</h5>
+                            <h5 class="card-title expert">Cuidados - Expert</h5>
                             <p class="card-text expert">
                                 Overclock seguro, actualización de BIOS, activación perfil EXPO o XMP, undervolting, posicionamiento correcto de la bomba del radiador y gestión adecuada de cables PCIe con 3 o más conectores (6 u 8 pines).
                             </p>
@@ -468,13 +556,19 @@ require_once __DIR__ . '/../config/conn.php';
                     </div>
 
 
-
-
                 </div>
             </div>
         </section>
 
 
+
+
+
+
+        <!-- Dynamic Containers -->
+
+
+        <!-- CPU -->
         <div id="containerCPU" class="containerDinamico" style="display: none;">
             <div class="dynamic-card" onclick="resetCPU()">
 
@@ -484,6 +578,15 @@ require_once __DIR__ . '/../config/conn.php';
                     <div class="card-body">
                         <h5 class="card-title beginner">Procesador - Beginner</h5>
                         <p class="card-text beginner" id="option-processor">El procesador es el cerebro de la computadora que hace funcionar la computadora.</p>
+                    </div>
+                </div>
+
+
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/Rizen 7 5700x.png" class="card-img-top size-img" alt="Procesador">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Procesador - Intermediate</h5>
+                        <p class="card-text intermediate" id="option-processor">Es un componente clave que ejecuta instrucciones, asegúrate de monitorear su temperatura para evitar sobrecalentamientos.</p>
                     </div>
                 </div>
 
@@ -505,137 +608,438 @@ require_once __DIR__ . '/../config/conn.php';
                 </div>
             </div>
 
+        </div>
 
+        <div id="containerRAM" class="containerDinamico" style="display: none;">
+            <div class="dynamic-card" onclick="resetRAM()">
+                <div class="card contenedor_base" id="principiante">
+                    <img src="../../public/assets/images/Corsair Dominator Platinum.webp" class="card-img-top size-img" alt="Memoria RAM">
+                    <div class="card-body">
+                        <h5 class="card-title beginner">Memoria RAM - Beginner</h5>
+                        <p class="card-text beginner" id="option-RAM">La memoria RAM es la memoria que la computadora usa para trabajar más rápido.</p>
+                    </div>
+                </div>
 
-            <div id="containerCuidados" class="containerDinamico" style="display: none;">
-                <div class="dynamic-card" onclick="resetCuidados()">
-                    <div class="card">
-                        <img src="../../public/assets/images/Pc-CuidadosExperto.webp" class="card-img-top size-img" alt="Cuidados Experto">
-                        <div class="card-body">
-                            <h5 class="card-title expert">Cuidados</h5>
-                            <p class="card-text expert">
-                                Overclock seguro, actualización de BIOS...
-                            </p>
-                        </div>
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/Corsair Dominator Platinum.webp" class="card-img-top size-img" alt="Memoria RAM">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Memoria RAM - Intermediate</h5>
+                        <p class="card-text intermediate" id="option-RAM">Monitorea el uso de memoria para asegurarte de que tu sistema tiene suficiente capacidad disponible.</p>
+                    </div>
+                </div>
+
+                <div class="card contenedor_base" id="experto">
+                    <img src="../../public/assets/images/Corsair Dominator Platinum.webp" class="card-img-top size-img" alt="Memoria RAM">
+                    <div class="card-body">
+                        <h5 class="card-title expert">Memoria RAM - Expert</h5>
+                        <p class="card-text expert" id="option-RAM">Configura perfiles avanzados como XMP/EXPO para optimizar su rendimiento.</p>
                     </div>
                 </div>
 
                 <div class="content-container">
                     <div class="inner-container">
-
-                    </div>
-
-                    <div class="inner-container">
-                        <!-- Contenido del segundo container -->
+                        <!-- Contenido específico de CPU -->
                     </div>
                 </div>
             </div>
+        </div>
 
-            <script>
-                // Variables para cada componente
-                let originalCPUCard;
-                let originalRAMCard;
-                let originalMotherboardCard;
-                // etc...
+        <!-- Motherboard -->
+        <div id="containerMotherboard" class="containerDinamico" style="display: none;">
+            <div class="dynamic-card" onclick="resetMotherboard()">
+                <div class="card contenedor_base" id="principiante">
+                    <img src="../../public/assets/images/Rog Strix B550-f Wifi 2.jpg" class="card-img-top size-img" alt="Tarjeta Madre">
+                    <div class="card-body">
+                        <h5 class="card-title beginner">Tarjeta Madre - Beginner</h5>
+                        <p class="card-text beginner" id="option-motherboard">La tarjeta madre es donde se conectan todos los componentes para que funcionen.</p>
+                    </div>
+                </div>
 
-                // CPU
-                function showCPUContainer(triggerElement) {
-                    const container = document.getElementById('containerCPU');
-                    const card = triggerElement.closest('.card');
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/Rog Strix B550-f Wifi 2.jpg" class="card-img-top size-img" alt="Tarjeta Madre">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Tarjeta Madre - Intermediate</h5>
+                        <p class="card-text intermediate" id="option-motherboard">Asegúrate de actualizar el BIOS regularmente para mantener la compatibilidad con componentes nuevos.</p>
+                    </div>
+                </div>
 
-                    originalCPUCard = card;
-                    card.style.display = 'none';
-                    container.style.display = 'block';
+                <div class="card contenedor_base" id="experto">
+                    <img src="../../public/assets/images/Rog Strix B550-f Wifi 2.jpg" class="card-img-top size-img" alt="Tarjeta Madre">
+                    <div class="card-body">
+                        <h5 class="card-title expert">Tarjeta Madre - Expert</h5>
+                        <p class="card-text expert" id="option-motherboard">Optimiza la configuración del BIOS para un rendimiento máximo en sistemas avanzados.</p>
+                    </div>
+                </div>
 
-                    requestAnimationFrame(() => {
-                        container.classList.remove('hiding');
-                    });
+                <div class="content-container">
+                    <div class="inner-container">
+                        <!-- Contenido específico de CPU -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    container.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
 
-                function resetCPU() {
-                    const container = document.getElementById('containerCPU');
+        <!-- Case -->
+        <div id="containerCase" class="containerDinamico" style="display: none;">
+            <div class="dynamic-card" onclick="resetCase()">
+                <div class="card contenedor_base" id="principiante">
+                    <img src="../../public/assets/images/H9 Elite NZXT.png" class="card-img-top size-img" alt="Gabinete">
+                    <div class="card-body">
+                        <h5 class="card-title beginner">Gabinete - Beginner</h5>
+                        <p class="card-text beginner" id="option-case">El gabinete es la caja que protege las partes de la computadora.</p>
+                    </div>
+                </div>
 
-                    container.classList.add('hiding');
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/H9 Elite NZXT.png" class="card-img-top size-img" alt="Gabinete">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Gabinete - Intermediate</h5>
+                        <p class="card-text intermediate" id="option-case">Mantén una gestión de cables ordenada para mejorar el flujo de aire interno.</p>
+                    </div>
+                </div>
 
-                    setTimeout(() => {
-                        if (originalCPUCard) {
-                            originalCPUCard.style.display = 'block';
-                        }
-                        container.style.display = 'none';
-                    }, 500);
-                }
+                <div class="card contenedor_base" id="experto">
+                    <img src="../../public/assets/images/H9 Elite NZXT.png" class="card-img-top size-img" alt="Gabinete">
+                    <div class="card-body">
+                        <h5 class="card-title expert">Gabinete - Expert</h5>
+                        <p class="card-text expert" id="option-case">Optimiza el flujo de aire con configuraciones avanzadas de ventiladores y sistemas de refrigeración líquida.</p>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <div class="inner-container">
+                        <!-- Contenido específico de CPU -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                // RAM
-                function showRAMContainer(triggerElement) {
-                    const container = document.getElementById('containerRAM');
-                    const card = triggerElement.closest('.card');
 
-                    originalRAMCard = card;
-                    card.style.display = 'none';
-                    container.style.display = 'block';
+        <!-- PSU -->
+        <div id="containerPSU" class="containerDinamico" style="display: none;">
+            <div class="dynamic-card" onclick="resetPSU()">
+                <div class="card contenedor_base" id="principiante">
+                    <img src="../../public/assets/images/Corsair RM750e.avif" class="card-img-top size-img" alt="Fuente De Poder">
+                    <div class="card-body">
+                        <h5 class="card-title beginner">Fuente De Poder - Beginner</h5>
+                        <p class="card-text beginner" id="option-powerSource">La fuente de poder da energía a todas las partes de la computadora.</p>
+                    </div>
+                </div>
 
-                    requestAnimationFrame(() => {
-                        container.classList.remove('hiding');
-                    });
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/Corsair RM750e.avif" class="card-img-top size-img" alt="Fuente De Poder">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Fuente De Poder - Intermediate</h5>
+                        <p class="card-text intermediate" id="option-powerSource">Asegúrate de que la fuente de poder tenga suficiente capacidad para todos tus componentes y mantén sus cables organizados.</p>
+                    </div>
+                </div>
 
-                    container.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                <div class="card contenedor_base" id="experto">
+                    <img src="../../public/assets/images/Corsair RM750e.avif" class="card-img-top size-img" alt="Fuente De Poder">
+                    <div class="card-body">
+                        <h5 class="card-title expert">Fuente De Poder - Expert</h5>
+                        <p class="card-text expert" id="option-powerSource">Selecciona una fuente modular de alta eficiencia (80 Plus Gold o superior) y verifica la calidad de sus conectores PCIe.</p>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <div class="inner-container">
+                        <!-- Contenido específico de CPU -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                function resetRAM() {
-                    const container = document.getElementById('containerRAM');
 
-                    container.classList.add('hiding');
+        <!-- Cooler -->
+        <div id="containerCooler" class="containerDinamico" style="display: none;">
+            <div class="dynamic-card" onclick="resetCooler()">
+                <div class="card contenedor_base" id="principiante">
+                    <img src="../../public/assets/images/kraken 240mm z53.webp" class="card-img-top size-img" alt="Enfriamiento De La CPU">
+                    <div class="card-body">
+                        <h5 class="card-title beginner">Enfriamiento De La CPU - Beginner</h5>
+                        <p class="card-text beginner" id="option-cooler">Mantiene el procesador a una temperatura adecuada.</p>
+                    </div>
+                </div>
 
-                    setTimeout(() => {
-                        if (originalRAMCard) {
-                            originalRAMCard.style.display = 'block';
-                        }
-                        container.style.display = 'none';
-                    }, 500);
-                }
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/kraken 240mm z53.webp" class="card-img-top size-img" alt="Enfriamiento De La CPU">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Enfriamiento De La CPU - Intermediate</h5>
+                        <p class="card-text intermediate" id="option-cooler">Revisa la limpieza de los ventiladores y el radiador regularmente para evitar obstrucciones.</p>
+                    </div>
+                </div>
 
-                // Motherboard
-                function showMotherboardContainer(triggerElement) {
-                    const container = document.getElementById('containerMotherboard');
-                    const card = triggerElement.closest('.card');
+                <div class="card contenedor_base" id="experto">
+                    <img src="../../public/assets/images/kraken 240mm z53.webp" class="card-img-top size-img" alt="Enfriamiento De La CPU">
+                    <div class="card-body">
+                        <h5 class="card-title expert">Enfriamiento De La CPU - Expert</h5>
+                        <p class="card-text expert" id="option-cooler">Configura perfiles de velocidad en el software del cooler y verifica la posición correcta de la bomba para sistemas de refrigeración líquida.</p>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <div class="inner-container">
+                        <!-- Contenido específico de CPU -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    originalMotherboardCard = card;
-                    card.style.display = 'none';
-                    container.style.display = 'block';
 
-                    requestAnimationFrame(() => {
-                        container.classList.remove('hiding');
-                    });
+        <!-- GPU -->
+        <div id="containerGPU" class="containerDinamico" style="display: none;">
+            <div class="dynamic-card" onclick="resetGPU()">
+                <div class="card contenedor_base" id="principiante">
+                    <img src="../../public/assets/images/rx 6750xt.jfif" class="card-img-top size-img" alt="Tarjeta Gráfica">
+                    <div class="card-body">
+                        <h5 class="card-title beginner">Tarjeta Gráfica - Beginner</h5>
+                        <p class="card-text beginner" id="option-graphicCard">Se encarga de mostrar imágenes detalladas en la pantalla.</p>
+                    </div>
+                </div>
 
-                    container.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/rx 6750xt.jfif" class="card-img-top size-img" alt="Tarjeta Gráfica">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Tarjeta Gráfica - Intermediate</h5>
+                        <p class="card-text intermediate" id="option-graphicCard">Mantén los drivers actualizados para garantizar el mejor rendimiento en los juegos y aplicaciones.</p>
+                    </div>
+                </div>
 
-                function resetMotherboard() {
-                    const container = document.getElementById('containerMotherboard');
+                <div class="card contenedor_base" id="experto">
+                    <img src="../../public/assets/images/rx 6750xt.jfif" class="card-img-top size-img" alt="Tarjeta Gráfica">
+                    <div class="card-body">
+                        <h5 class="card-title expert">Tarjeta Gráfica - Expert</h5>
+                        <p class="card-text expert" id="option-graphicCard">Realiza ajustes en las configuraciones de overclock y control térmico para maximizar el rendimiento.</p>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <div class="inner-container">
+                        <!-- Contenido específico de CPU -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    container.classList.add('hiding');
 
-                    setTimeout(() => {
-                        if (originalMotherboardCard) {
-                            originalMotherboardCard.style.display = 'block';
-                        }
-                        container.style.display = 'none';
-                    }, 500);
-                }
+        <!-- Storage -->
+        <div id="containerStorage" class="containerDinamico" style="display: none;">
+            <div class="dynamic-card" onclick="resetStorage()">
 
-                // Y así sucesivamente para cada componente...
-            </script>
+                <!-- Principiante -->
+                <div class="card contenedor_base" id="principiante">
+                    <img src="../../public/assets/images/SSD-Crucial-T500-NVMe-2TB.webp" class="card-img-top size-img" alt="Disco Duro">
+                    <div class="card-body">
+                        <h5 class="card-title beginner">Disco Duro - Beginner</h5>
+                        <p class="card-text beginner" id="option-drive">
+                            Es donde se guarda todo, los archivos y programas de forma permanente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Promedio -->
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/SSD-Crucial-T500-NVMe-2TB.webp" class="card-img-top size-img" alt="Disco Duro">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Disco Duro - Intermediate</h5>
+                        <p class="card-text intermediate" id="option-drive">
+                            Verifica regularmente el estado de salud del disco utilizando software especializado.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experto -->
+                <div class="card contenedor_base" id="experto">
+                    <img src="../../public/assets/images/SSD-Crucial-T500-NVMe-2TB.webp" class="card-img-top size-img" alt="Disco Duro">
+                    <div class="card-body">
+                        <h5 class="card-title expert">Disco Duro - Expert</h5>
+                        <p class="card-text expert" id="option-drive">
+                            Configura discos en RAID para mejorar velocidad o redundancia, y optimiza el sistema de archivos.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <div class="inner-container">
+                        <!-- Contenido específico de CPU -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Pasta Térmica -->
+        <div id="containerThermalPaste" class="containerDinamico" style="display: none;">
+            <div class="dynamic-card" onclick="resetThermalPaste()">
+                <!-- Principiante -->
+                <div class="card contenedor_base" id="principiante">
+                    <img src="../../public/assets/images/Artic MX-4.png" class="card-img-top size-img" alt="Pasta Térmica">
+                    <div class="card-body">
+                        <h5 class="card-title beginner">Pasta Térmica - Beginner</h5>
+                        <p class="card-text beginner" id="option-thermalPaste">
+                            Es una sustancia que se coloca entre el procesador y el enfriamiento para evitar que se caliente demasiado.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Promedio -->
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/Artic MX-4.png" class="card-img-top size-img" alt="Pasta Térmica">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Pasta Térmica - Intermediate</h5>
+                        <p class="card-text intermediate" id="option-thermalPaste">
+                            Asegúrate de cambiar la pasta térmica cada 1-2 años para mantener un buen rendimiento térmico.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experto -->
+                <div class="card contenedor_base" id="experto">
+                    <img src="../../public/assets/images/Artic MX-4.png" class="card-img-top size-img" alt="Pasta Térmica">
+                    <div class="card-body">
+                        <h5 class="card-title expert">Pasta Térmica - Expert</h5>
+                        <p class="card-text expert" id="option-thermalPaste">
+                            Utiliza pastas térmicas de alto rendimiento y aplica de manera uniforme para maximizar la disipación de calor.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <div class="inner-container">
+                        <!-- Contenido específico de CPU -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Accesorios -->
+        <div id="containerAccessories" class="containerDinamico" style="display: none;">
+            <div class="dynamic-card" onclick="resetAccessories()">
+                <div class="card contenedor_base" id="principiante">
+                    <img src="../../public/assets/images/Gigabyte G24F 2.png" class="card-img-top size-img" alt="Accesorios">
+                    <div class="card-body">
+                        <h5 class="card-title beginner">Accesorios - Beginner</h5>
+                        <p class="card-text beginner" id="option-accessories">
+                            Los accesorios de una PC añaden funciones: monitor (pantalla), teclado, ratón, altavoces, y cámara web.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Promedio -->
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/Gigabyte G24F 2.png" class="card-img-top size-img" alt="Accesorios">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Accesorios - Intermediate</h5>
+                        <p class="card-text intermediate" id="option-accessories">
+                            Invierte en accesorios de buena calidad, como un monitor con alta frecuencia de actualización y un teclado mecánico.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experto -->
+                <div class="card contenedor_base" id="experto">
+                    <img src="../../public/assets/images/Gigabyte G24F 2.png" class="card-img-top size-img" alt="Accesorios">
+                    <div class="card-body">
+                        <h5 class="card-title expert">Accesorios - Expert</h5>
+                        <p class="card-text expert" id="option-accessories">
+                            Configura periféricos avanzados, como un monitor dual y sistemas de sonido envolvente para experiencias inmersivas.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <div class="inner-container">
+                        <!-- Contenido específico de CPU -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Recommendations -->
+        <div id="containerRecommendations" class="containerDinamico" style="display: none;">
+            <div class="dynamic-card" onclick="resetRecommendations()">
+
+                <!-- Cards -->
+                <div class="card contenedor_base" id="principiante">
+                    <img src="../../public/assets/images/Pc-Recomendadas.webp" class="card-img-top size-img" alt="Recomendaciones">
+                    <div class="card-body">
+                        <h5 class="card-title beginner">Recomendaciones - Beginner</h5>
+                        <p class="card-text beginner" id="option-recommendation">
+                            Compra computadoras según lo que necesitas, compara precios y conoce lo básico para saber si es lo que realmente necesitas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/Pc-Recomendadas.webp" class="card-img-top size-img" alt="Recomendaciones">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Recomendaciones - Intermediate</h5>
+                        <p class="card-text intermediate" id="option-recommendation">
+                            Investiga benchmarks de rendimiento antes de comprar, prioriza componentes según tus necesidades y equilibra el presupuesto entre CPU, GPU y RAM.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card contenedor_base" id="experto">
+                    <img src="../../public/assets/images/Pc-Recomendadas.webp" class="card-img-top size-img" alt="Recomendaciones">
+                    <div class="card-body">
+                        <h5 class="card-title expert">Recomendaciones - Expert</h5>
+                        <p class="card-text expert" id="option-recommendation">
+                            Considera configuraciones avanzadas como RAID, overclocking y refrigeración líquida para maximizar rendimiento y personalización.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <div class="inner-container">
+                        <!-- Contenido específico de CPU -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Cuidados -->
+        <div id="containerCuidados" class="containerDinamico" style="display: none;">
+            <div class="dynamic-card" onclick="resetCuidados()">
+
+                <!-- Cards -->
+                <div class="card contenedor_base" id="principiante">
+                    <img src="../../public/assets/images/Pc-CuidadosPrincipiante.png" class="card-img-top size-img" alt="Cuidados Principiante">
+                    <div class="card-body">
+                        <h5 class="card-title beginner">Cuidados - Beginner</h5>
+                        <p class="card-text beginner">
+                            Son tareas simples como tener tu computadora en un lugar fresco, evitar infectar tu computadora de un virus, apagar correctamente la PC que significa cada cable de tu PC.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card contenedor_base" id="promedio">
+                    <img src="../../public/assets/images/Pc-CuidadosPromedio.avif" class="card-img-top size-img" alt="Cuidados Promedio">
+                    <div class="card-body">
+                        <h5 class="card-title intermediate">Cuidados - Intermediate</h5>
+                        <p class="card-text intermediate">
+                            Limpieza interna y externa, monitoreo de temperaturas, flujo de aire, actualización de drivers y cambio de pasta térmica.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card contenedor_base" id="experto">
+                    <img src="../../public/assets/images/Pc-CuidadosExperto.webp" class="card-img-top size-img" alt="Cuidados Experto" onclick="showCuidadosContainer(this)">
+                    <div class="card-body">
+                        <h5 class="card-title expert">Cuidados - Expert</h5>
+                        <p class="card-text expert">
+                            Overclock seguro, actualización de BIOS, activación perfil EXPO o XMP, undervolting, posicionamiento correcto de la bomba del radiador y gestión adecuada de cables PCIe con 3 o más conectores (6 u 8 pines).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-container">
+                    <div class="inner-container">
+                        <!-- Contenido específico de Cuidados -->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
 
 
 
