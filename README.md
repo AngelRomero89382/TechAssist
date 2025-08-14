@@ -17,8 +17,7 @@ Por favor, lee [LICENSE](LICENSE.md) antes de usar este repositorio.
 - ❌ Trabajos derivados
 
 ## 🌟 Sobre el Proyecto
-TechAssist es una plataforma educativa innovadora diseñada para...
-[Descripción de tu proyecto]
+TechAssist es una plataforma educativa innovadora diseñada para usuarios con conocimientos nulos, basicos y avanzados sobre computadoras y telefonos moviles
 
 ## 📝 Autor
 Desarrollado y mantenido por Angel Jesús Romero Pérez
